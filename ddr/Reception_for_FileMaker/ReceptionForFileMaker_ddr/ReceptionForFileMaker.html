@@ -971,6 +971,7 @@
 <ul></ul>
 </td><td>
 <ul>
+<li><a href="#36ScriptAnchor_">commit_create</a></li>
 <li><a href="#120ScriptAnchor_">s_portal_post_add</a></li>
 </ul>
 </td><td>
@@ -2102,6 +2103,7 @@
 </td><td>
 <ul>
 <li><a href="#19ScriptAnchor_">s_init_record_edit</a></li>
+<li><a href="#120ScriptAnchor_">s_portal_post_add</a></li>
 </ul>
 </td><td>
 <ul></ul>
@@ -24064,6 +24066,8 @@ There is no record to edit the data. Create a record before executing."; デフ�
 <li>If [ Get ( スクリプトの結果 ) = True ]</li>
 <li>#正常終了メッセージ</li>
 <li>カスタムダイアログを表示 [ タイトル: RF_Lang::d_hedder; メッセージ: RF_Lang::d_submit_ok, デフォルトボタン: RF_Lang::d_ok, 確定: 「いいえ」 ]</li>
+<li>#正常終了したらコメント欄はクリアしておく　#4 より</li>
+<li>フィールド設定 [ RF_Issue::RI_note_stoc; "" ]</li>
 <li>End If</li>
 <li></li>
 <li></li>
@@ -24103,6 +24107,7 @@ There is no record to edit the data. Create a record before executing."; デフ�
 <li><a href="#13262FieldAnchor_"><em>RF_Issue</em>::RI_server_primary_key</a></li>
 <li><a href="#13210FieldAnchor_"><em>RF_Issue</em>::RI_status_stoc</a></li>
 <li><a href="#140105FieldAnchor_"><em>RF_Lang</em>::d_submit_ok</a></li>
+<li><a href="#13255FieldAnchor_"><em>RF_Issue</em>::RI_note_stoc</a></li>
 </ul>
 </td>
 </tr>
@@ -27906,6 +27911,10 @@ Create a temporary record for initial settings.(It will be deleted after work.)"
 <li></li>
 <li></li>
 <li>変数を設定 [ $database; 値:Get ( ファイル名 ) ]</li>
+<li></li>
+<li>#レイアウト名の取得を追加 #8</li>
+<li>変数を設定 [ $layout; 値:RF_Issue_Config::__callback_layout_name ]</li>
+<li></li>
 <li>変数を設定 [ $client_primary_key; 値:RF_Issue::__parent_key ]</li>
 <li>If [ not IsEmpty ( RF_Issue::RI_server_primary_key ) ]</li>
 <li>変数を設定 [ $server_primary_key; 値:RF_Issue::RI_server_primary_key ]</li>
@@ -27925,6 +27934,7 @@ Create a temporary record for initial settings.(It will be deleted after work.)"
 [ "account_update"     ; $account_update     ; JSONString ];
 [ "account_update_key" ; $account_update_key ; JSONString ];
 [ "database" ; $database ; JSONString ];
+[ "layout" ; $layout ; JSONString ];
 [ "client_primary_key" ; $client_primary_key ; JSONString ];
 [ "server_primary_key" ; $server_primary_key ; JSONString ];
 [ "from_address" ; $from_address ; JSONString ];
@@ -27990,6 +28000,7 @@ Create a temporary record for initial settings.(It will be deleted after work.)"
 <li><a href="#13256FieldAnchor_"><em>RF_Issue</em>::RI_detail_stoc</a></li>
 <li><a href="#14082FieldAnchor_"><em>RF_Lang</em>::d_hedder</a></li>
 <li><a href="#14069FieldAnchor_"><em>RF_Lang</em>::d_ok</a></li>
+<li><a href="#13364FieldAnchor_"><em>RF_Issue_Config</em>::__callback_layout_name</a></li>
 <li><a href="#1326FieldAnchor_"><em>RF_Issue</em>::__parent_key</a></li>
 <li><a href="#13262FieldAnchor_"><em>RF_Issue</em>::RI_server_primary_key</a></li>
 <li><a href="#13210FieldAnchor_"><em>RF_Issue</em>::RI_status_stoc</a></li>
