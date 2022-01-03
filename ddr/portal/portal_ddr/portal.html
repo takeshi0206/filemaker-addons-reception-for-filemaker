@@ -131,7 +131,7 @@
 </tr>
 <tr class="regularcharttext" vAlign="top">
 <td><a href="#129BaseTableAnchor_">log</a></td><td>
-<div align="left"><a href="#129BaseTableAnchor_">48 フィールド</a> 定義済, 2 レコード</div>
+<div align="left"><a href="#129BaseTableAnchor_">48 フィールド</a> 定義済, 0 レコード</div>
 </td><td><a href="#1065124TableAnchor_"><em>log≫log</em></a>, <a href="#1065112TableAnchor_"><em>service≫log</em></a>, <a href="#1065090TableAnchor_"><em>log≫primary≫log_dec</em></a>, <a href="#1065094TableAnchor_"><em>myaccount≫log</em></a>, <a href="#1065109TableAnchor_"><em>myaccount≫check_mylog</em></a>, <a href="#1065102TableAnchor_"><em>myaccount≫log_all</em></a>, <a href="#1065105TableAnchor_"><em>myaccount≫log_and_service</em></a>, <a href="#1065110TableAnchor_"><em>myaccount≫check_log_all</em></a>, <a href="#1065106TableAnchor_"><em>log≫primary≫log_ace</em></a>, <a href="#1065100TableAnchor_"><em>myaccount≫filter_log≫log</em></a>, <a href="#1065089TableAnchor_"><em>log</em></a></td>
 </tr>
 <tr class="regularcharttext" vAlign="top">
@@ -141,7 +141,7 @@
 </tr>
 <tr class="regularcharttext" vAlign="top">
 <td><a href="#131BaseTableAnchor_">env</a></td><td>
-<div align="left"><a href="#131BaseTableAnchor_">16 フィールド</a> 定義済, 1 レコード</div>
+<div align="left"><a href="#131BaseTableAnchor_">17 フィールド</a> 定義済, 1 レコード</div>
 </td><td><a href="#1065092TableAnchor_"><em>env</em></a></td>
 </tr>
 <tr class="regularcharttext" vAlign="top">
@@ -2964,7 +2964,7 @@
 		<table width="100%" border="1">
 <tbody>
 <tr class="privsetfirst" vAlign="top">
-<td colSpan="9">テーブル名: <a name="131BaseTableAnchor_"/>env - 16 フィールド</td>
+<td colSpan="9">テーブル名: <a name="131BaseTableAnchor_"/>env - 17 フィールド</td>
 </tr>
 <tr class="chartheaders" vAlign="top">
 <td width="8%">フィールド名</td><td width="7%">タイプ</td><td width="14%">オプション</td><td width="10%">コメント</td><td width="13%">レイアウト上</td><td width="15%">リレーションシップ内</td><td width="22%">スクリプト内</td><td width="11%">値一覧内</td>
@@ -3448,6 +3448,37 @@
 <ul></ul>
 </td><td>
 <ul></ul>
+</td><td>
+<ul></ul>
+</td>
+</tr>
+			<tr class="regularcharttext" vAlign="top">
+<td><a name="13118FieldAnchor_"/>homeurl</td><td>標準, テキスト</td><td><strong>入力値の自動化:</strong>
+<ul>
+<li>編集を許可</li>
+</ul>
+<strong>入力値の制限:</strong>
+<ul>
+<li>データの入力時のみ</li>
+</ul>
+<strong>データの格納:</strong>
+<ul>
+<li>繰り返し: 1</li>
+<li>索引: なし</li>
+<li>必要時に索引を自動作成</li>
+<li>索引設定言語: 日本語</li>
+</ul>
+</td><td></td><td>
+<ul>
+<li><a href="#17LayoutAnchor_">環境設定</a></li>
+</ul>
+</td><td>
+<ul></ul>
+</td><td>
+<ul>
+<li><a href="#21ScriptAnchor_">サービスを開く・レコードを追加</a></li>
+<li><a href="#30ScriptAnchor_">logからのサービスを開く・レコード指定</a></li>
+</ul>
 </td><td>
 <ul></ul>
 </td>
@@ -5272,7 +5303,9 @@
 </td><td>
 <ul>
 <li><a href="#1ScriptAnchor_">サインイン</a></li>
+<li><a href="#21ScriptAnchor_">サービスを開く・レコードを追加</a></li>
 <li><a href="#112ScriptAnchor_">クライアントアドオンの設定</a></li>
+<li><a href="#30ScriptAnchor_">logからのサービスを開く・レコード指定</a></li>
 <li><a href="#95ScriptAnchor_">set_password</a></li>
 <li><a href="#90ScriptAnchor_">s_portal_connect</a></li>
 <li><a href="#91ScriptAnchor_">s_portal_edit</a></li>
@@ -6238,6 +6271,7 @@
 <ul>
 <li><a href="#1ScriptAnchor_">サインイン</a></li>
 <li><a href="#33ScriptAnchor_">サインアウト</a></li>
+<li><a href="#2ScriptAnchor_">startup</a></li>
 </ul>
 </td><td>[ファイルデフォルト]</td><td></td><td><a href="#01valThemesSectionAnchor_">01</a></td>
 </tr>
@@ -6320,12 +6354,12 @@
 <tr class="regularcharttext" valign="top">
 <td><a name="17LayoutAnchor_"/>環境設定</td><td>いいえ</td><td>はい</td><td>
 <ul>
-<li><a href="#17LayoutObjectsAnchor_通常フィールド">10 通常フィールド</a></li>
+<li><a href="#17LayoutObjectsAnchor_通常フィールド">11 通常フィールド</a></li>
 <li><a href="#17LayoutObjectsAnchor_マージフィールド">1 マージフィールド</a></li>
 <li><a href="#17LayoutObjectsAnchor_グループボタン">1 グループボタン</a></li>
-<li><a href="#17LayoutObjectsAnchor_ボタン">8 ボタン</a></li>
-<li><a href="#17LayoutObjectsAnchor_ポップオーバーボタン">4 ポップオーバーボタン</a></li>
-<li><a href="#17LayoutObjectsAnchor_ボタンバー">8 ボタンバー</a></li>
+<li><a href="#17LayoutObjectsAnchor_ボタン">10 ボタン</a></li>
+<li><a href="#17LayoutObjectsAnchor_ポップオーバーボタン">5 ポップオーバーボタン</a></li>
+<li><a href="#17LayoutObjectsAnchor_ボタンバー">10 ボタンバー</a></li>
 <li><a href="#17LayoutObjectsAnchor_ポータル">1 ポータル</a></li>
 <li><a href="#17LayoutObjectsAnchor_スライドコントロール">1 スライドコントロール</a></li>
 </ul>
@@ -6556,6 +6590,10 @@
 </tr>
 <tr class="regularcharttext" valign="top">
 <td colspan="2"><a name="2ButtonBar80.0000000141.0000000232.0000000421.0000000LayoutObjectAnchor_"/><ul>
+<b>オブジェクト名:</b>
+<li>sign_in</li>
+</ul>
+<ul>
 <b>レイアウト名:</b>
 <li><a href="#2LayoutAnchor_">sign-in</a></li>
 </ul>
@@ -15414,6 +15452,43 @@
 </tbody>
 </table>
 <br>
+<table width="100%" border="1">
+<tbody>
+<tr class="chartheaders" valign="top">
+<td colspan="6" class="privsetfirst">フィールド名: <a href="#13118FieldAnchor_"><em>env</em>::homeurl</a></td>
+</tr>
+<tr class="chartsubheads" valign="top">
+<td class="chartheaders" colspan="2">フィールドプロパティ</td><td class="chartheaders" width="14%" colspan="1">座標</td><td class="chartheaders" width="17%" colspan="1">フィールド書式</td><td class="chartheaders" width="30%" colspan="1">フィールド選択時の動作</td><td class="chartheaders" width="10%" colspan="1">クイック検索</td>
+</tr>
+<tr class="regularcharttext" valign="top">
+<td colspan="2"><a name="Field109.000000070.0000000170.0000000502.0000000LayoutObjectAnchor_"/><ul>
+<b>レイアウト名:</b>
+<li><a href="#17LayoutAnchor_">環境設定</a></li>
+</ul>
+</td><td colspan="1">
+<ul>
+<li>上: 109 pt</li>
+<li>左: 70 pt</li>
+<li>下: 170 pt</li>
+<li>右: 502 pt</li>
+</ul>
+<ul>
+<li>アンカー: 左右, 上下</li>
+</ul>
+</td><td colspan="1">フィールド書式: <ul>
+<li>編集ボックス</li>
+<li>垂直スクロールバーをつける</li>
+</ul>
+</td><td colspan="1">フィールド選択時の動作:<ul>
+<li>フィールドへの入力を許可する: 検索モード, ブラウズモード</li>
+<li>タッチキーボードタイプ: データタイプのデフォルト</li>
+<li>次のフィールドへの移動に使用するキー: Tab キー</li>
+</ul>
+</td><td colspan="1">はい</td>
+</tr>
+</tbody>
+</table>
+<br>
 <p>
 <span class="partheading"><a name="17LayoutObjectsAnchor_マージフィールド"/>マージフィールド</span>
 </p>
@@ -15606,6 +15681,73 @@
 <li>上: 5 pt</li>
 <li>左: 201 pt</li>
 <li>下: 209 pt</li>
+<li>右: 491 pt</li>
+</ul>
+<ul>
+<li>アンカー: 左, 上</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td colspan="7" class="chartsubheads">ポップオーバーの内容</td>
+</tr>
+<tr>
+<td width="14%" class="chartsubheads">タブコントロール</td><td width="14%" class="chartsubheads">スライドコントロール</td><td width="14%" class="chartsubheads">フィールド</td><td width="14%" class="chartsubheads">ボタン</td><td width="14%" class="chartsubheads">ポータル</td><td width="14%" class="chartsubheads">Web ビューアコントロール</td><td class="chartsubheads">グラフ</td>
+</tr>
+<tr class="regularcharttext" valign="top">
+<td>
+<ul></ul>
+</td><td>
+<ul></ul>
+</td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+</tbody>
+</table>
+<br>
+<table width="100%" border="1">
+<tbody>
+<tr class="chartsubheads" valign="top">
+<td colspan="2" width="30%">ポップオーバーボタンのプロパティ</td><td colspan="5">座標</td>
+</tr>
+<tr class="regularcharttext" valign="top">
+<td colspan="2"><a name="PopoverButton55.0000000502.000000099.0000000548.0000000LayoutObjectAnchor_"/><ul>
+<b>タイプ:</b>
+<li>テキスト: </li>
+</ul>
+<ul>
+<b>レイアウト名:</b>
+<li><a href="#17LayoutAnchor_">環境設定</a></li>
+</ul>
+</td><td colspan="5">
+<ul>
+<li>上: 55 pt</li>
+<li>左: 502 pt</li>
+<li>下: 99 pt</li>
+<li>右: 548 pt</li>
+</ul>
+<ul>
+<li>アンカー: 右, 上</li>
+</ul>
+</td>
+</tr>
+<tr class="chartsubheads" valign="top">
+<td colspan="2" width="30%">ポップオーバーのプロパティ</td><td colspan="5">座標</td>
+</tr>
+<tr class="regularcharttext" valign="top">
+<td colspan="2">
+<ul>
+<b>タイトルバーを表示: </b>
+<li>いいえ</li>
+</ul>
+<ul>
+<b>位置:</b>
+<li>左</li>
+</ul>
+</td><td colspan="5">
+<ul>
+<li>上: 5 pt</li>
+<li>左: 201 pt</li>
+<li>下: 294 pt</li>
 <li>右: 491 pt</li>
 </ul>
 <ul>
@@ -16237,6 +16379,136 @@
 <td colspan="2" width="30%">ボタンバープロパティ</td><td colspan="5">座標</td>
 </tr>
 <tr class="regularcharttext" valign="top">
+<td colspan="2"><a name="ButtonBar134.0000000504.0000000489.0000000549.0000000LayoutObjectAnchor_"/><ul>
+<b>レイアウト名:</b>
+<li><a href="#17LayoutAnchor_">環境設定</a></li>
+</ul>
+<ul>
+<b>文字の方向:</b>
+<li>横書き</li>
+</ul>
+</td><td colspan="5">
+<ul>
+<li>上: 134 pt</li>
+<li>左: 504 pt</li>
+<li>下: 489 pt</li>
+<li>右: 549 pt</li>
+</ul>
+<ul>
+<li>アンカー: 左, 上</li>
+</ul>
+</td>
+</tr>
+<table width="100%" border="1">
+<tbody>
+<tr class="chartsubheads" valign="top">
+<td colspan="7" class="chartsubheads">ボタンセグメント</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" border="1">
+<tbody>
+<tr class="chartsubheads" valign="top">
+<td colspan="3">ボタンプロパティ</td><td colspan="1" width="14%">座標</td><td colspan="3" width="43%">スクリプト/スクリプトステップ</td>
+</tr>
+<tr class="regularcharttext" valign="top">
+<td colspan="3"><a name="Button134.0000000504.0000000489.0000000549.0000000LayoutObjectAnchor_"/><ul>
+<b>タイプ:</b>
+<li>テキスト: </li>
+</ul>
+<ul>
+<b>レイアウト名:</b>
+<li><a href="#17LayoutAnchor_">環境設定</a></li>
+</ul>
+<ul>
+<b>追加プロパティ:</b>
+<li>ボタン上でカーソルを手の形にする</li>
+</ul>
+</td><td colspan="1">
+<ul>
+<li>上: 134 pt</li>
+<li>左: 504 pt</li>
+<li>下: 489 pt</li>
+<li>右: 549 pt</li>
+</ul>
+</td><td colspan="3">オブジェクトへ移動 [ オブジェクト名: "slide_env_homeurl" ]</td>
+</tr>
+</tbody>
+</table>
+</tbody>
+</table>
+<br>
+<table width="100%" border="1">
+<tbody>
+<tr class="chartsubheads" valign="top">
+<td colspan="2" width="30%">ボタンバープロパティ</td><td colspan="5">座標</td>
+</tr>
+<tr class="regularcharttext" valign="top">
+<td colspan="2"><a name="ButtonBar133.000000014.0000000488.000000059.0000000LayoutObjectAnchor_"/><ul>
+<b>レイアウト名:</b>
+<li><a href="#17LayoutAnchor_">環境設定</a></li>
+</ul>
+<ul>
+<b>文字の方向:</b>
+<li>横書き</li>
+</ul>
+</td><td colspan="5">
+<ul>
+<li>上: 133 pt</li>
+<li>左: 14 pt</li>
+<li>下: 488 pt</li>
+<li>右: 59 pt</li>
+</ul>
+<ul>
+<li>アンカー: 左, 上</li>
+</ul>
+</td>
+</tr>
+<table width="100%" border="1">
+<tbody>
+<tr class="chartsubheads" valign="top">
+<td colspan="7" class="chartsubheads">ボタンセグメント</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" border="1">
+<tbody>
+<tr class="chartsubheads" valign="top">
+<td colspan="3">ボタンプロパティ</td><td colspan="1" width="14%">座標</td><td colspan="3" width="43%">スクリプト/スクリプトステップ</td>
+</tr>
+<tr class="regularcharttext" valign="top">
+<td colspan="3"><a name="Button133.000000014.0000000488.000000059.0000000LayoutObjectAnchor_"/><ul>
+<b>タイプ:</b>
+<li>テキスト: </li>
+</ul>
+<ul>
+<b>レイアウト名:</b>
+<li><a href="#17LayoutAnchor_">環境設定</a></li>
+</ul>
+<ul>
+<b>追加プロパティ:</b>
+<li>ボタン上でカーソルを手の形にする</li>
+</ul>
+</td><td colspan="1">
+<ul>
+<li>上: 133 pt</li>
+<li>左: 14 pt</li>
+<li>下: 488 pt</li>
+<li>右: 59 pt</li>
+</ul>
+</td><td colspan="3">オブジェクトへ移動 [ オブジェクト名: "slide_env_privacy" ]</td>
+</tr>
+</tbody>
+</table>
+</tbody>
+</table>
+<br>
+<table width="100%" border="1">
+<tbody>
+<tr class="chartsubheads" valign="top">
+<td colspan="2" width="30%">ボタンバープロパティ</td><td colspan="5">座標</td>
+</tr>
+<tr class="regularcharttext" valign="top">
 <td colspan="2"><a name="17ButtonBar591.0000000178.0000000643.0000000388.0000000LayoutObjectAnchor_"/><ul>
 <b>レイアウト名:</b>
 <li><a href="#17LayoutAnchor_">環境設定</a></li>
@@ -16477,6 +16749,29 @@
 <ul></ul>
 </td><td>フィールドオブジェクト<ul>
 <li><a href="#13116FieldAnchor_"><em>env</em>::privacy_policy</a> 座標 (109, 70, 563, 502)</li>
+</ul>
+</td><td>
+<li><a href="#PopoverButton55.0000000502.000000099.0000000548.0000000LayoutObjectAnchor_">テキスト: </a> 座標 (55, 502, 99, 548)</li>
+</td><td></td><td></td><td></td>
+</tr>
+<tr>
+<td></td><td colspan="7" style="padding:0px;"></td>
+</tr>
+<tr class="regularcharttext" valign="top">
+<td>
+<ul>
+<b>スライド 4</b>
+</ul>
+<ul>
+<b>オブジェクト名:</b>
+<li>slide_env_homeurl</li>
+</ul>
+</td><td>
+<ul></ul>
+</td><td>
+<ul></ul>
+</td><td>フィールドオブジェクト<ul>
+<li><a href="#13118FieldAnchor_"><em>env</em>::homeurl</a> 座標 (109, 70, 170, 502)</li>
 </ul>
 </td><td>
 <li><a href="#PopoverButton55.0000000502.000000099.0000000548.0000000LayoutObjectAnchor_">テキスト: </a> 座標 (55, 502, 99, 548)</li>
@@ -23310,15 +23605,20 @@
 <li></li>
 <li>#起動時の処理</li>
 <li></li>
+<li>レイアウト切り替え [ 「sign-in」 (env) ]</li>
+<li></li>
 <li>ウインドウの調整
 [ 隠す ]</li>
+<li></li>
 <li>ツールバーの表示切り替え
 [ 隠す ]</li>
+<li></li>
 <li>ウインドウの調整
 [ 最大化 ]</li>
 <li></li>
 <li>スクリプト実行 [ 「グローバル変数の初期化」 ]</li>
 <li></li>
+<li>オブジェクトへ移動 [ オブジェクト名: "sigin_in" ]</li>
 <li>オブジェクトへ移動 [ オブジェクト名: "sigin_in_bar" ]</li>
 <li></li>
 <li>現在のスクリプト終了 [ 結果: True ]</li>
@@ -23339,7 +23639,9 @@
 </tr>
 <tr vAlign="top">
 <td class="chartheadersnobg">このスクリプトで使用されるレイアウト</td><td class="regularcharttext">
-<ul></ul>
+<ul>
+<li><a href="#2LayoutAnchor_">sign-in</a></li>
+</ul>
 </td>
 </tr>
 <tr vAlign="top">
@@ -24767,14 +25069,15 @@
 <li>現在のスクリプト終了 [ 結果: False ]</li>
 <li>End If</li>
 <li></li>
-<li>//  ポータルの更新 [ オブジェクト名: $obj_name ]</li>
-<li></li>
+<li>#固定値portalのオブジェクト名をXML形式でグローバル変数に設定する。</li>
 <li>変数を設定 [ $dummy; 値:RF_g_object_xml ( RF_c_portal ; $obj_name ) ]</li>
 <li></li>
+<li>#XML形式のタイムスタンプ値一覧に、オブジェクト名のキーでタイムスタンプを設定する。</li>
 <li>フィールド設定 [ myaccount::_xml_timestamp_list; RF_xml_io ( myaccount::_xml_timestamp_list ; $obj_name ; Get ( タイムスタンプ ) ) ]</li>
 <li></li>
 <li>レコード/検索条件確定</li>
 <li></li>
+<li>#ポータルをオブジェクト名で更新する。</li>
 <li>ポータルの更新 [ オブジェクト名: $obj_name ]</li>
 <li></li>
 <li>現在のスクリプト終了 [ 結果: True ]</li>
@@ -25365,7 +25668,7 @@
 <li></li>
 <li>#サービスを開く・開くだけ</li>
 <li></li>
-<li>カスタムダイアログを表示 [ タイトル: "ガイド"; メッセージ: "データベースを開きます。レコードが存在する場合、（レコードを特定せず開くので）意図せずに不必要な個人情報を閲覧したというログが残る可能性があります。"; デフォルトボタン: 「OK」, 確定: 「はい」; ボタン 2: 「キャンセル」, 確定: 「いいえ」 ]</li>
+<li>カスタムダイアログを表示 [ タイトル: "ガイド"; メッセージ: "レイアウトを特定せずデータベースを開きます。レコードが存在する場合、（レコードを特定せず開くので）意図せずに不必要な個人情報を閲覧したというログが残る可能性があります。"; デフォルトボタン: 「OK」, 確定: 「はい」; ボタン 2: 「キャンセル」, 確定: 「いいえ」 ]</li>
 <li></li>
 <li>If [ Get ( 最終メッセージ選択 )  &ne; 1 ]</li>
 <li>現在のスクリプト終了 [ 結果: False ]</li>
@@ -25513,6 +25816,8 @@
 <li>変数を設定 [ $account_create; 値:myaccount::account_name ]</li>
 <li>変数を設定 [ $account_create_key; 値:myaccount::主キー ]</li>
 <li></li>
+<li>変数を設定 [ $homeurl; 値:env::homeurl ]</li>
+<li></li>
 <li>If [ IsEmpty ( $protocol ) ]</li>
 <li></li>
 <li>カスタムダイアログを表示 [ タイトル: "ガイド"; メッセージ: "プロトコルが設定されていません。"; デフォルトボタン: 「OK」, 確定: 「はい」 ]</li>
@@ -25547,7 +25852,7 @@
 [ "account_create_key" ; $account_create_key ; JSONString ]
 
  ) ]</li>
-<li>変数を設定 [ $add_url; 値:RF_g_https_connect ( "add_url" ; $domain ; $database ; "" ; "" ; $add_script_param ) ]</li>
+<li>変数を設定 [ $add_url; 値:RF_g_https_connect ( "add_url" ; $domain ; $database ; "" ; "" ; $add_script_param ; $homeurl ) ]</li>
 <li>URL を開く [ $add_url ]
 [ ダイアログなし ]</li>
 <li></li>
@@ -25566,6 +25871,7 @@
 <li><a href="#13228FieldAnchor_"><em>myaccount≫service</em>::layout</a></li>
 <li><a href="#1306FieldAnchor_"><em>myaccount</em>::account_name</a></li>
 <li><a href="#1301FieldAnchor_"><em>myaccount</em>::主キー</a></li>
+<li><a href="#13118FieldAnchor_"><em>env</em>::homeurl</a></li>
 </ul>
 </td>
 </tr>
@@ -25582,6 +25888,7 @@
 <tr vAlign="top">
 <td class="chartheadersnobg">このスクリプトで使用されるテーブル</td><td class="regularcharttext">
 <ul>
+<li><a href="#131BaseTableAnchor_">env</a></li>
 <li><a href="#130BaseTableAnchor_">myaccount</a></li>
 <li><a href="#132BaseTableAnchor_">service</a></li>
 </ul>
@@ -25590,6 +25897,7 @@
 <tr vAlign="top">
 <td class="chartheadersnobg">このスクリプトで使用されるテーブルオカレンス</td><td class="regularcharttext">
 <ul>
+<li><a href="#1065092TableAnchor_"><em>env</em></a></li>
 <li><a href="#1065091TableAnchor_"><em>myaccount</em></a></li>
 <li><a href="#1065097TableAnchor_"><em>myaccount≫service</em></a></li>
 </ul>
@@ -25654,7 +25962,7 @@
 <li></li>
 <li>#サービスの追加</li>
 <li></li>
-<li>新規ウインドウ [ スタイル: カード; 使用するレイアウト: 「サービス設定」 (service); 閉じる: いいえ; 最小化: いいえ; 最大化: いいえ; サイズ変更: いいえ; メニューバー: いいえ; 親ウインドウを淡色表示: はい; ツールバー: いいえ ]</li>
+<li>新規ウインドウ (Web 上の仮想ウインドウ)  [ スタイル: カード; 使用するレイアウト: 「サービス設定」 (service); 閉じる: いいえ; 最小化: いいえ; 最大化: いいえ; サイズ変更: いいえ; メニューバー: いいえ; 親ウインドウを淡色表示: はい; ツールバー: いいえ ]</li>
 <li>ウインドウの調整
 [ 収まるようにサイズ変更 ]</li>
 <li></li>
@@ -26537,6 +26845,8 @@
 <li>変数を設定 [ $account_create; 値:Get ( アカウント名 ) ]</li>
 <li>変数を設定 [ $account_create_key; 値:RF_g_account_key ( "?" ) ]</li>
 <li></li>
+<li>変数を設定 [ $homeurl; 値:env::homeurl ]</li>
+<li></li>
 <li></li>
 <li>If [ IsEmpty ( $protocol ) ]</li>
 <li></li>
@@ -26568,7 +26878,7 @@
 <li></li>
 <li>Else If [ $protocol = RF_c_protocol ( "https" ) ]</li>
 <li></li>
-<li>変数を設定 [ $show_url; 値:RF_g_https_connect ( "show_url" ; $domain ; $database ; $layout ; $primary_key ; $script_param ) ]</li>
+<li>変数を設定 [ $show_url; 値:RF_g_https_connect ( "show_url" ; $domain ; $database ; $layout ; $primary_key ; $script_param ; $homeurl ) ]</li>
 <li></li>
 <li>URL を開く [ $show_url ]
 [ ダイアログなし ]</li>
@@ -26594,6 +26904,7 @@
 <li><a href="#13228FieldAnchor_"><em>log≫service</em>::layout</a></li>
 <li><a href="#1299FieldAnchor_"><em>log≫primary≫log_dec</em>::status</a></li>
 <li><a href="#12916FieldAnchor_"><em>log</em>::client_primary_key</a></li>
+<li><a href="#13118FieldAnchor_"><em>env</em>::homeurl</a></li>
 </ul>
 </td>
 </tr>
@@ -26610,6 +26921,7 @@
 <tr vAlign="top">
 <td class="chartheadersnobg">このスクリプトで使用されるテーブル</td><td class="regularcharttext">
 <ul>
+<li><a href="#131BaseTableAnchor_">env</a></li>
 <li><a href="#129BaseTableAnchor_">log</a></li>
 <li><a href="#129BaseTableAnchor_">log</a></li>
 <li><a href="#132BaseTableAnchor_">service</a></li>
@@ -26619,6 +26931,7 @@
 <tr vAlign="top">
 <td class="chartheadersnobg">このスクリプトで使用されるテーブルオカレンス</td><td class="regularcharttext">
 <ul>
+<li><a href="#1065092TableAnchor_"><em>env</em></a></li>
 <li><a href="#1065089TableAnchor_"><em>log</em></a></li>
 <li><a href="#1065090TableAnchor_"><em>log≫primary≫log_dec</em></a></li>
 <li><a href="#1065101TableAnchor_"><em>log≫service</em></a></li>
@@ -29624,7 +29937,7 @@
 <li></li>
 <li>ウインドウの調整
 [ 収まるようにサイズ変更 ]</li>
-<li>ウインドウの移動/サイズ変更 [ 現在のウインドウ; 上: (Get ( ウインドウデスクトップ高さ ) - Get ( ウインドウ高さ )) / 2; 左: (Get ( ウインドウデスクトップ幅 ) - Get ( ウインドウ幅 )) / 2 ]</li>
+<li>ウインドウの移動/サイズ変更 [ 名前: "アカウント・ユーザ"; 現在のファイル; 高さ: 616; 横幅: 545; 上: (Get ( ウインドウデスクトップ高さ ) - Get ( ウインドウ高さ )) / 2; 左: (Get ( ウインドウデスクトップ幅 ) - Get ( ウインドウ幅 )) / 2 ]</li>
 <li></li>
 <li>現在のスクリプト終了 [ 結果: True ]</li>
 <li></li>
@@ -29949,7 +30262,7 @@
 <li></li>
 <li>レコード/検索条件確定</li>
 <li></li>
-<li>新規ウインドウ [ スタイル: カード; 使用するレイアウト: 「環境設定」 (env); 閉じる: いいえ; 最小化: いいえ; 最大化: いいえ; サイズ変更: いいえ; メニューバー: いいえ; 親ウインドウを淡色表示: はい; ツールバー: いいえ ]</li>
+<li>新規ウインドウ (Web 上の仮想ウインドウ)  [ スタイル: カード; 使用するレイアウト: 「環境設定」 (env); 閉じる: いいえ; 最小化: いいえ; 最大化: いいえ; サイズ変更: いいえ; メニューバー: いいえ; 親ウインドウを淡色表示: はい; ツールバー: いいえ ]</li>
 <li>ウインドウの調整
 [ 収まるようにサイズ変更 ]</li>
 <li></li>
@@ -30966,7 +31279,7 @@
 <li>現在のスクリプト終了 [ 結果: True ]</li>
 <li>End If</li>
 <li></li>
-<li>新規ウインドウ [ スタイル: ドキュメント; 使用するレイアウト: &lt;現在のレイアウト&gt;; 高さ: 0; 横幅: 0; 上: 0; 左: 0; 閉じる: はい; 最小化: いいえ; 最大化: いいえ; サイズ変更: いいえ; メニューバー: いいえ; 親ウインドウを淡色表示: いいえ; ツールバー: いいえ ]</li>
+<li>新規ウインドウ (Web 上の仮想ウインドウ)  [ スタイル: ドキュメント; 使用するレイアウト: &lt;現在のレイアウト&gt;; 高さ: 0; 横幅: 0; 上: 0; 左: 0; 閉じる: はい; 最小化: いいえ; 最大化: いいえ; サイズ変更: いいえ; メニューバー: いいえ; 親ウインドウを淡色表示: いいえ; ツールバー: いいえ ]</li>
 <li></li>
 <li>ウインドウの調整
 [ 隠す ]</li>
@@ -32074,8 +32387,9 @@
 </td><td></td>
 </tr>
 <tr class="regularcharttext" vAlign="top">
-<td><a name="6CustomFunctionAnchor_"/>RF_g_object_xml</td><td>key;object_name</td><td>すべてのアカウント</td><td>
-<strong>Case</strong> ( 
+<td><a name="6CustomFunctionAnchor_"/>RF_g_object_xml</td><td>key;object_name</td><td>すべてのアカウント</td><td><strong>// key と object_name の配列をXML形式でグローバル変数 $$buttonbar に設定します。
+</strong><strong>// key が ? の場合は値を返します。
+</strong><strong>Case</strong> ( 
 
   <strong>IsEmpty</strong> ( key ) ;
     "";
@@ -32243,7 +32557,8 @@ status = "?" ;
 </td><td></td>
 </tr>
 <tr class="regularcharttext" vAlign="top">
-<td><a name="19CustomFunctionAnchor_"/>RF_xml_io</td><td>xml;key;value</td><td>すべてのアカウント</td><td><strong>Case</strong> ( 
+<td><a name="19CustomFunctionAnchor_"/>RF_xml_io</td><td>xml;key;value</td><td>すべてのアカウント</td><td><strong>// xml 形式の文字列からkeyとvalueのセットで値を設定したり取り出したりします。
+</strong><strong>Case</strong> ( 
 
   <strong>IsEmpty</strong> ( key ) ;
     "";
@@ -32396,10 +32711,10 @@ status = "?" ;
 </td>
 </tr>
 <tr class="regularcharttext" vAlign="top">
-<td><a name="27CustomFunctionAnchor_"/>RF_g_https_connect</td><td>control;domain;database;layout;primary_key;json</td><td>すべてのアカウント</td><td><strong>Let</strong> ( [
+<td><a name="27CustomFunctionAnchor_"/>RF_g_https_connect</td><td>control;domain;database;layout;primary_key;json;homeurl</td><td>すべてのアカウント</td><td><strong>Let</strong> ( [
 
   $_base = "https://" &amp; domain &amp; "/fmi/webd/" &amp; database ;
-  $_homeurl = "homeurl=https://" &amp; domain &amp; "/close.html"
+  $_homeurl = <strong>If</strong> ( <strong>IsEmpty</strong>( homeurl ) ; "" ; "?homeurl="  &amp; homeurl ) 
 
 ];
 
@@ -32415,15 +32730,15 @@ status = "?" ;
 
   control = "show_url" ;
  
-    $_base &amp; "?" &amp; $_homeurl &amp; "&amp;script=show&amp;param=" &amp; <strong>GetAsURLEncoded</strong> ( json ) ;
+    $_base &amp; $_homeurl &amp; "&amp;script=show&amp;param=" &amp; <strong>GetAsURLEncoded</strong> ( json ) ;
 
   control = "setup_url" ;
  
-    $_base &amp; "?" &amp; $_homeurl &amp; "&amp;script=setup&amp;param=" &amp; <strong>GetAsURLEncoded</strong> ( json ) ;
+    $_base &amp; $_homeurl &amp; "&amp;script=setup&amp;param=" &amp; <strong>GetAsURLEncoded</strong> ( json ) ;
 
   control = "add_url" ;
  
-    $_base &amp; "?" &amp; $_homeurl &amp; "&amp;script=new_record&amp;param=" &amp; <strong>GetAsURLEncoded</strong> ( json ) ;
+    $_base &amp; $_homeurl &amp; "&amp;script=new_record&amp;param=" &amp; <strong>GetAsURLEncoded</strong> ( json ) ;
 
   "?"
 

@@ -1,0 +1,44 @@
+<html>
+<head>
+<meta charset="utf-8">
+
+<style type="text/css">
+   body {
+       background:#f2f5f8
+   }
+   input {
+     border: none;
+     color: #090909;
+     padding: 0.7em 1.7em;
+     font-size: 18px;
+     border-radius: 0.5em;
+     background: #e8e8e8;
+     border: 1px solid #e8e8e8;
+     transition: all .3s;
+     box-shadow: 6px 6px 12px #c5c5c5,
+       -6px -6px 12px #ffffff;
+   }
+
+   input:hover {
+       border: 1px solid white;
+   }
+
+   input:active {
+       box-shadow: 4px 4px 12px #a3a6bd,
+           -4px -4px 12px #ffffff;
+   }
+</style>
+<title>close window</title>
+</head>
+<body>
+   <p><center>
+       Claris FileMaker WebDirect Session Closed<br>
+           セッションを終了しました。<br>
+       </center>
+   </p>
+   <p><center>
+      <input type="button" onclick="window.open('about:blank', '_self').close();" value="このウィンドウを閉じる">
+   </center>
+</p>
+</body>
+</html>

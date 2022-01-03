@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jwpcconfig version="1.0">
+    <build-settings>
+        <parameter name="product">FileMaker Web Publishing Engine</parameter>
+        <parameter name="product-version">19.4.2.204</parameter>
+        <parameter name="build-date">12/08/2021</parameter>
+    </build-settings>
+    <settings>
+        <parameter name="enabled">no</parameter>
+        <parameter name="serverid">36145439-6B6F-4457-8037-F3CDF2854A13</parameter>
+        <parameter name="chunksize">10</parameter>
+        <parameter name="phpenabled">no</parameter>
+        <parameter name="iwpenabled">yes</parameter>
+        <parameter name="iwplanguage">eng</parameter>
+        <parameter name="mwperouting">yes</parameter>
+        <parameter name="homeurlenabled">yes</parameter>
+        <parameter name="customhomeurl">https://byictnet.local</parameter>
+    </settings>
+    <logs>
+        <log enabled="yes" level="info" name="user" size="40MB"/>
+        <log enabled="no" name="debug"/>
+    </logs>
+</jwpcconfig>
