@@ -25,16 +25,16 @@
 <td class="chartheadersnobg">レイアウト</td><td class="regularcharttext"><a href="#valLayoutsSectionAnchor_">27</a></td>
 </tr>
 <tr>
-<td class="chartheadersnobg">スクリプト</td><td class="regularcharttext"><a href="#valScriptsSectionAnchor_">145</a></td>
+<td class="chartheadersnobg">スクリプト</td><td class="regularcharttext"><a href="#valScriptsSectionAnchor_">147</a></td>
 </tr>
 <tr>
 <td class="chartheadersnobg">値一覧</td><td class="regularcharttext"><a href="#valValueListsSectionAnchor_">18</a></td>
 </tr>
 <tr>
-<td class="chartheadersnobg">カスタム関数</td><td class="regularcharttext"><a href="#valCustomFunctionsSectionAnchor_">84</a></td>
+<td class="chartheadersnobg">カスタム関数</td><td class="regularcharttext"><a href="#valCustomFunctionsSectionAnchor_">87</a></td>
 </tr>
 <tr>
-<td class="chartheadersnobg">アカウント</td><td class="regularcharttext"><a href="#valAccountsSectionAnchor_">11</a></td>
+<td class="chartheadersnobg">アカウント</td><td class="regularcharttext"><a href="#valAccountsSectionAnchor_">12</a></td>
 </tr>
 <tr>
 <td class="chartheadersnobg">アクセス権セット</td><td class="regularcharttext"><a href="#valPrivilegeSetsSectionAnchor_">10</a></td>
@@ -151,7 +151,7 @@
 </tr>
 <tr class="regularcharttext" vAlign="top">
 <td><a href="#130BaseTableAnchor_">myaccount</a></td><td>
-<div align="left"><a href="#130BaseTableAnchor_">68 フィールド</a> 定義済, 10 レコード</div>
+<div align="left"><a href="#130BaseTableAnchor_">68 フィールド</a> 定義済, 11 レコード</div>
 </td><td><a href="#1065091TableAnchor_"><em>myaccount</em></a>, <a href="#1065154TableAnchor_"><em>myaccount_group&raquo;myaccount_pkey</em></a>, <a href="#1065133TableAnchor_"><em>group&raquo;myaccount_all</em></a>, <a href="#1065132TableAnchor_"><em>group&raquo;myaccount</em></a>, <a href="#1065104TableAnchor_"><em>log≫myaccount_updater</em></a>, <a href="#1065126TableAnchor_"><em>log≫myaccount_creater</em></a>, <a href="#1065098TableAnchor_"><em>myaccount≫myaccount</em></a>, <a href="#1065103TableAnchor_"><em>myaccount≫myaccount_all</em></a>, <a href="#1065107TableAnchor_"><em>myaccount≫myaccount_all_check</em></a></td>
 </tr>
 <tr class="regularcharttext" vAlign="top">
@@ -176,17 +176,17 @@
 </tr>
 <tr class="regularcharttext" vAlign="top">
 <td><a href="#140BaseTableAnchor_">service_group</a></td><td>
-<div align="left"><a href="#140BaseTableAnchor_">10 フィールド</a> 定義済, 29 レコード</div>
-</td><td><a href="#1065141TableAnchor_"><em>service&raquo;service_group</em></a>, <a href="#1065143TableAnchor_"><em>service_group</em></a>, <a href="#1065142TableAnchor_"><em>groupe&raquo;service_group</em></a></td>
+<div align="left"><a href="#140BaseTableAnchor_">10 フィールド</a> 定義済, 30 レコード</div>
+</td><td><a href="#1065142TableAnchor_"><em>groupe&raquo;service_group</em></a>, <a href="#1065141TableAnchor_"><em>service&raquo;service_group</em></a>, <a href="#1065143TableAnchor_"><em>service_group</em></a></td>
 </tr>
 <tr class="regularcharttext" vAlign="top">
 <td><a href="#141BaseTableAnchor_">myaccount_group</a></td><td>
-<div align="left"><a href="#141BaseTableAnchor_">13 フィールド</a> 定義済, 30 レコード</div>
-</td><td><a href="#1065152TableAnchor_"><em>group&raquo;myaccount_group_user</em></a>, <a href="#1065149TableAnchor_"><em>group&raquo;myaccount_group_manager</em></a>, <a href="#1065148TableAnchor_"><em>myaccount&raquo;myaccount_group_manager</em></a>, <a href="#1065151TableAnchor_"><em>myaccount&raquo;myaccount_group_user</em></a>, <a href="#1065147TableAnchor_"><em>myaccount_group</em></a></td>
+<div align="left"><a href="#141BaseTableAnchor_">13 フィールド</a> 定義済, 37 レコード</div>
+</td><td><a href="#1065151TableAnchor_"><em>myaccount&raquo;myaccount_group_user</em></a>, <a href="#1065148TableAnchor_"><em>myaccount&raquo;myaccount_group_manager</em></a>, <a href="#1065152TableAnchor_"><em>group&raquo;myaccount_group_user</em></a>, <a href="#1065149TableAnchor_"><em>group&raquo;myaccount_group_manager</em></a>, <a href="#1065147TableAnchor_"><em>myaccount_group</em></a></td>
 </tr>
 <tr class="regularcharttext" vAlign="top">
 <td><a href="#142BaseTableAnchor_">audit</a></td><td>
-<div align="left"><a href="#142BaseTableAnchor_">13 フィールド</a> 定義済, 588 レコード</div>
+<div align="left"><a href="#142BaseTableAnchor_">13 フィールド</a> 定義済, 773 レコード</div>
 </td><td><a href="#1065160TableAnchor_"><em>audit&raquo;audit_self</em></a>, <a href="#1065157TableAnchor_"><em>audit</em></a></td>
 </tr>
 <tr class="regularcharttext" vAlign="top">
@@ -2489,6 +2489,10 @@
 <li>
 <strong>If</strong> ( <strong>PatternCount</strong> ( <a href="#13244FieldAnchor_"><em>service</em>::_g_myaccount_manager_service_list</a> ; <a href="#1321FieldAnchor_"><em>service</em>::主キー</a> ) &gt; 0 ; <a href="#22CustomFunctionAnchor_">RF_C_on</a> ; "" )</li>
 </ul>
+<strong>入力値の自動化:</strong>
+<ul>
+<li>常に評価する</li>
+</ul>
 <strong>データの格納:</strong>
 <ul>
 <li>繰り返し: 1</li>
@@ -2514,6 +2518,10 @@
 <li>コンテキストテーブル: <a href="#1065093TableAnchor_"><em>service</em></a></li>
 <li>
 <strong>If</strong> ( <strong>PatternCount</strong> ( <a href="#13245FieldAnchor_"><em>service</em>::_g_myaccount_user_service_list</a> ; <a href="#1321FieldAnchor_"><em>service</em>::主キー</a> ) &gt; 0 ; <a href="#22CustomFunctionAnchor_">RF_C_on</a> ; "" )</li>
+</ul>
+<strong>入力値の自動化:</strong>
+<ul>
+<li>常に評価する</li>
 </ul>
 <strong>データの格納:</strong>
 <ul>
@@ -4382,7 +4390,9 @@
 <li><a href="#63ScriptAnchor_">全てにチェック・アカウント</a></li>
 <li><a href="#64ScriptAnchor_">チェック分のアカウントを削除</a></li>
 <li><a href="#179ScriptAnchor_">b_i_アカウント設定画面の初期設定</a></li>
+<li><a href="#198ScriptAnchor_">アカウントが使えるグループのサービスキーリストをセット</a></li>
 <li><a href="#21ScriptAnchor_">サービスを開く・レコードを追加</a></li>
+<li><a href="#217ScriptAnchor_">テスト用・グループテーブルが更新された時の処理</a></li>
 <li><a href="#187ScriptAnchor_">グループの管理者アカウントを設定する・チェックオン</a></li>
 <li><a href="#188ScriptAnchor_">グループの管理者アカウントを設定する・チェックオフ</a></li>
 <li><a href="#195ScriptAnchor_">グループの利用者アカウントを設定する・チェックオン</a></li>
@@ -8522,7 +8532,7 @@
 <ul>
 <li>コンテキストテーブル: <a href="#1065130TableAnchor_"><em>group</em></a></li>
 <li>
-<strong>List</strong> ( <a href="#14010FieldAnchor_"><em>groupe&raquo;service_group</em>::_c_service_name</a> )</li>
+<strong>UniqueValues</strong> ( <strong>List</strong> ( <a href="#14010FieldAnchor_"><em>groupe&raquo;service_group</em>::_c_service_name</a> ) )</li>
 </ul>
 <strong>入力値の自動化:</strong>
 <ul>
@@ -8537,11 +8547,14 @@
 </td><td></td><td>
 <ul>
 <li><a href="#1LayoutAnchor_">ポータル</a></li>
+<li><a href="#27LayoutAnchor_">group</a></li>
 </ul>
 </td><td>
 <ul></ul>
 </td><td>
-<ul></ul>
+<ul>
+<li><a href="#217ScriptAnchor_">テスト用・グループテーブルが更新された時の処理</a></li>
+</ul>
 </td><td>
 <ul></ul>
 </td>
@@ -8738,7 +8751,7 @@
 <ul>
 <li>コンテキストテーブル: <a href="#1065130TableAnchor_"><em>group</em></a></li>
 <li>
-<strong>List</strong> ( <a href="#1406FieldAnchor_"><em>groupe&raquo;service_group</em>::external_key_of_service</a> )</li>
+<strong>UniqueValues</strong> ( <strong>List</strong> ( <a href="#1406FieldAnchor_"><em>groupe&raquo;service_group</em>::external_key_of_service</a> ) )</li>
 </ul>
 <strong>入力値の自動化:</strong>
 <ul>
@@ -8751,11 +8764,15 @@
 <li>索引設定言語: 日本語</li>
 </ul>
 </td><td></td><td>
-<ul></ul>
+<ul>
+<li><a href="#27LayoutAnchor_">group</a></li>
+</ul>
 </td><td>
 <ul></ul>
 </td><td>
-<ul></ul>
+<ul>
+<li><a href="#217ScriptAnchor_">テスト用・グループテーブルが更新された時の処理</a></li>
+</ul>
 </td><td>
 <ul></ul>
 </td>
@@ -8804,7 +8821,7 @@
 <strong>データの格納:</strong>
 <ul>
 <li>繰り返し: 1</li>
-<li>索引: なし</li>
+<li>索引: 最小限</li>
 <li>必要時に索引を自動作成</li>
 <li>索引設定言語: 日本語</li>
 </ul>
@@ -9017,6 +9034,7 @@
 </ul>
 </td><td>
 <ul>
+<li><a href="#217ScriptAnchor_">テスト用・グループテーブルが更新された時の処理</a></li>
 <li><a href="#126ScriptAnchor_">復元・ガイダンス</a></li>
 </ul>
 </td><td>
@@ -9104,6 +9122,7 @@
 <ul></ul>
 </td><td>
 <ul>
+<li><a href="#217ScriptAnchor_">テスト用・グループテーブルが更新された時の処理</a></li>
 <li><a href="#126ScriptAnchor_">復元・ガイダンス</a></li>
 </ul>
 </td><td>
@@ -9320,6 +9339,7 @@
 </td><td></td><td>
 <ul>
 <li><a href="#13LayoutAnchor_">アカウント・管理者</a></li>
+<li><a href="#3LayoutAnchor_">myaccount</a></li>
 <li><a href="#33LayoutAnchor_">myaccount_group</a></li>
 </ul>
 </td><td>
@@ -9330,6 +9350,7 @@
 </ul>
 </td><td>
 <ul>
+<li><a href="#48ScriptAnchor_">アカウント作成・ユーザ</a></li>
 <li><a href="#176ScriptAnchor_">アカウントが使えるグループ管理者の設定をする・チェックオン</a></li>
 <li><a href="#177ScriptAnchor_">アカウントが使えるグループ管理者の設定をする・チェックオフ</a></li>
 <li><a href="#180ScriptAnchor_">アカウントが使えるグループ利用者の設定をする・チェックオン</a></li>
@@ -9386,6 +9407,10 @@
 <li>コンテキストテーブル: <a href="#1065147TableAnchor_"><em>myaccount_group</em></a></li>
 <li><a href="#1386FieldAnchor_"><em>myaccount_group&raquo;group_pkey</em>::group_name</a></li>
 </ul>
+<strong>入力値の自動化:</strong>
+<ul>
+<li>常に評価する</li>
+</ul>
 <strong>データの格納:</strong>
 <ul>
 <li>繰り返し: 1</li>
@@ -9395,6 +9420,7 @@
 </td><td></td><td>
 <ul>
 <li><a href="#13LayoutAnchor_">アカウント・管理者</a></li>
+<li><a href="#3LayoutAnchor_">myaccount</a></li>
 </ul>
 </td><td>
 <ul></ul>
@@ -9447,6 +9473,10 @@
 <li>コンテキストテーブル: <a href="#1065147TableAnchor_"><em>myaccount_group</em></a></li>
 <li><a href="#1306FieldAnchor_"><em>myaccount_group&raquo;myaccount_pkey</em>::account_name</a></li>
 </ul>
+<strong>入力値の自動化:</strong>
+<ul>
+<li>常に評価する</li>
+</ul>
 <strong>データの格納:</strong>
 <ul>
 <li>繰り返し: 1</li>
@@ -9456,6 +9486,7 @@
 </td><td></td><td>
 <ul>
 <li><a href="#28LayoutAnchor_">グループ設定</a></li>
+<li><a href="#33LayoutAnchor_">myaccount_group</a></li>
 </ul>
 </td><td>
 <ul></ul>
@@ -9471,6 +9502,10 @@
 <li>コンテキストテーブル: <a href="#1065147TableAnchor_"><em>myaccount_group</em></a></li>
 <li><a href="#13823FieldAnchor_"><em>myaccount_group&raquo;group_pkey</em>::_c_key_list_of_service</a></li>
 </ul>
+<strong>入力値の自動化:</strong>
+<ul>
+<li>常に評価する</li>
+</ul>
 <strong>データの格納:</strong>
 <ul>
 <li>繰り返し: 1</li>
@@ -9482,9 +9517,7 @@
 </td><td>
 <ul></ul>
 </td><td>
-<ul>
-<li><a href="#198ScriptAnchor_">アカウントが使えるグループのサービスキーリストをセット</a></li>
-</ul>
+<ul></ul>
 </td><td>
 <ul></ul>
 </td>
@@ -9494,6 +9527,10 @@
 <ul>
 <li>コンテキストテーブル: <a href="#1065147TableAnchor_"><em>myaccount_group</em></a></li>
 <li><a href="#13085FieldAnchor_"><em>myaccount_group&raquo;myaccount_pkey</em>::sex</a></li>
+</ul>
+<strong>入力値の自動化:</strong>
+<ul>
+<li>常に評価する</li>
 </ul>
 <strong>データの格納:</strong>
 <ul>
@@ -9518,6 +9555,10 @@
 <ul>
 <li>コンテキストテーブル: <a href="#1065147TableAnchor_"><em>myaccount_group</em></a></li>
 <li><a href="#13027FieldAnchor_"><em>myaccount_group&raquo;myaccount_pkey</em>::account_name_free</a></li>
+</ul>
+<strong>入力値の自動化:</strong>
+<ul>
+<li>常に評価する</li>
 </ul>
 <strong>データの格納:</strong>
 <ul>
@@ -10292,6 +10333,77 @@
 <td width="9%">テーブルオカレンス</td><td width="13%">ソーステーブル</td><td width="11%">ソースファイル</td><td width="16%">リレーションシップ内</td><td width="12%">スクリプト内</td><td width="16%">フィールド定義内</td><td width="13%">値一覧内</td><td width="10%">関連付けられているレイアウト</td>
 </tr>
 <tr class="regularcharttext" vAlign="top">
+<td bgColor="#777777"><a name="1065151TableAnchor_"/><em>myaccount&raquo;myaccount_group_user</em></td><td><a href="#141BaseTableAnchor_">myaccount_group</a></td><td>portal.fmp12</td><td>
+<ul>
+<li><a href="#myaccount&infin;myaccount&raquo;myaccount_group_userRelationshipAnchor_"><em>myaccount&infin;myaccount&raquo;myaccount_group_user</em></a></li>
+</ul>
+</td><td>
+<ul>
+<li><a href="#48ScriptAnchor_">アカウント作成・ユーザ</a></li>
+<li><a href="#180ScriptAnchor_">アカウントが使えるグループ利用者の設定をする・チェックオン</a></li>
+<li><a href="#184ScriptAnchor_">アカウントが使えるグループ利用者の設定をする・チェックオフ</a></li>
+</ul>
+</td><td>
+<ul>
+<li><a href="#13012FieldAnchor_"><em>myaccount</em>::_c_group_for_pkey_list_user</a></li>
+<li><a href="#13083FieldAnchor_"><em>myaccount</em>::_c_group_for_name_list_user</a></li>
+</ul>
+</td><td>
+<ul></ul>
+</td><td>
+<ul>
+<li><a href="#13LayoutAnchor_">アカウント・管理者</a></li>
+<li><a href="#3LayoutAnchor_">myaccount</a></li>
+</ul>
+</td>
+</tr>
+<tr class="regularcharttext" vAlign="top">
+<td bgColor="#777777"><a name="1065148TableAnchor_"/><em>myaccount&raquo;myaccount_group_manager</em></td><td><a href="#141BaseTableAnchor_">myaccount_group</a></td><td>portal.fmp12</td><td>
+<ul>
+<li><a href="#myaccount&infin;myaccount&raquo;myaccount_group_managerRelationshipAnchor_"><em>myaccount&infin;myaccount&raquo;myaccount_group_manager</em></a></li>
+</ul>
+</td><td>
+<ul>
+<li><a href="#176ScriptAnchor_">アカウントが使えるグループ管理者の設定をする・チェックオン</a></li>
+<li><a href="#177ScriptAnchor_">アカウントが使えるグループ管理者の設定をする・チェックオフ</a></li>
+</ul>
+</td><td>
+<ul>
+<li><a href="#13060FieldAnchor_"><em>myaccount</em>::_c_group_for_pkey_list_manager</a></li>
+<li><a href="#13082FieldAnchor_"><em>myaccount</em>::_c_group_for_name_list_manager</a></li>
+</ul>
+</td><td>
+<ul></ul>
+</td><td>
+<ul>
+<li><a href="#13LayoutAnchor_">アカウント・管理者</a></li>
+</ul>
+</td>
+</tr>
+<tr class="regularcharttext" vAlign="top">
+<td bgColor="#777777"><a name="1065142TableAnchor_"/><em>groupe&raquo;service_group</em></td><td><a href="#140BaseTableAnchor_">service_group</a></td><td>portal.fmp12</td><td>
+<ul>
+<li><a href="#group=groupe&raquo;service_groupRelationshipAnchor_"><em>group=groupe&raquo;service_group</em></a></li>
+</ul>
+</td><td>
+<ul>
+<li><a href="#217ScriptAnchor_">テスト用・グループテーブルが更新された時の処理</a></li>
+</ul>
+</td><td>
+<ul>
+<li><a href="#13815FieldAnchor_"><em>group</em>::_c_flg_for_group_service_exist</a></li>
+<li><a href="#13816FieldAnchor_"><em>group</em>::_c_name_list_of_service</a></li>
+<li><a href="#13823FieldAnchor_"><em>group</em>::_c_key_list_of_service</a></li>
+</ul>
+</td><td>
+<ul></ul>
+</td><td>
+<ul>
+<li><a href="#28LayoutAnchor_">グループ設定</a></li>
+</ul>
+</td>
+</tr>
+<tr class="regularcharttext" vAlign="top">
 <td bgColor="#787878"><a name="1065141TableAnchor_"/><em>service&raquo;service_group</em></td><td><a href="#140BaseTableAnchor_">service_group</a></td><td>portal.fmp12</td><td>
 <ul>
 <li><a href="#service=service&raquo;service_groupRelationshipAnchor_"><em>service=service&raquo;service_group</em></a></li>
@@ -10316,6 +10428,53 @@
 <ul>
 <li><a href="#6LayoutAnchor_">サービス設定</a></li>
 <li><a href="#32LayoutAnchor_">service&raquo;service_group</a></li>
+</ul>
+</td>
+</tr>
+<tr class="regularcharttext" vAlign="top">
+<td bgColor="#787878"><a name="1065130TableAnchor_"/><em>group</em></td><td><a href="#138BaseTableAnchor_">group</a></td><td>portal.fmp12</td><td>
+<ul>
+<li><a href="#group=routerRelationshipAnchor_"><em>group=router</em></a></li>
+<li><a href="#group&raquo;myaccount=groupRelationshipAnchor_"><em>group&raquo;myaccount=group</em></a></li>
+<li><a href="#groupxgroup&raquo;myaccount_allRelationshipAnchor_"><em>groupxgroup&raquo;myaccount_all</em></a></li>
+<li><a href="#group=groupe&raquo;service_groupRelationshipAnchor_"><em>group=groupe&raquo;service_group</em></a></li>
+<li><a href="#group&infin;group&raquo;myaccount_group_managerRelationshipAnchor_"><em>group&infin;group&raquo;myaccount_group_manager</em></a></li>
+<li><a href="#group&infin;group&raquo;myaccount_group_userRelationshipAnchor_"><em>group&infin;group&raquo;myaccount_group_user</em></a></li>
+<li><a href="#group=group&raquo;webviewer_typeRelationshipAnchor_"><em>group=group&raquo;webviewer_type</em></a></li>
+</ul>
+</td><td>
+<ul>
+<li><a href="#1ScriptAnchor_">サインイン</a></li>
+<li><a href="#217ScriptAnchor_">テスト用・グループテーブルが更新された時の処理</a></li>
+<li><a href="#157ScriptAnchor_">グループの追加</a></li>
+<li><a href="#158ScriptAnchor_">チェック分のグループを削除</a></li>
+<li><a href="#159ScriptAnchor_">全てにチェック・グループ</a></li>
+<li><a href="#154ScriptAnchor_">グループ設定</a></li>
+<li><a href="#189ScriptAnchor_">グループ設定画面の初期設定</a></li>
+<li><a href="#188ScriptAnchor_">グループの管理者アカウントを設定する・チェックオフ</a></li>
+<li><a href="#196ScriptAnchor_">グループの利用者アカウントを設定する・チェックオフ</a></li>
+<li><a href="#207ScriptAnchor_">グループの性別構成をグラフ表示する</a></li>
+<li><a href="#126ScriptAnchor_">復元・ガイダンス</a></li>
+</ul>
+</td><td>
+<ul>
+<li><a href="#1388FieldAnchor_"><em>group</em>::_count_of_user</a></li>
+<li><a href="#1389FieldAnchor_"><em>group</em>::_count_of_manager</a></li>
+<li><a href="#13812FieldAnchor_"><em>group</em>::_manager_account_name_list</a></li>
+<li><a href="#13815FieldAnchor_"><em>group</em>::_c_flg_for_group_service_exist</a></li>
+<li><a href="#13817FieldAnchor_"><em>group</em>::_c_flg_for_group_myaccount_manager_exist</a></li>
+<li><a href="#13821FieldAnchor_"><em>group</em>::_c_flg_for_group_myaccount_user_exist</a></li>
+<li><a href="#1409FieldAnchor_"><em>service_group</em>::_c_group_name</a></li>
+</ul>
+</td><td>
+<ul>
+<li><a href="#13VLAnchor_">group_list</a></li>
+</ul>
+</td><td>
+<ul>
+<li><a href="#1LayoutAnchor_">ポータル</a></li>
+<li><a href="#28LayoutAnchor_">グループ設定</a></li>
+<li><a href="#27LayoutAnchor_">group</a></li>
 </ul>
 </td>
 </tr>
@@ -10557,52 +10716,6 @@
 </td>
 </tr>
 <tr class="regularcharttext" vAlign="top">
-<td bgColor="#787878"><a name="1065130TableAnchor_"/><em>group</em></td><td><a href="#138BaseTableAnchor_">group</a></td><td>portal.fmp12</td><td>
-<ul>
-<li><a href="#group=routerRelationshipAnchor_"><em>group=router</em></a></li>
-<li><a href="#group&raquo;myaccount=groupRelationshipAnchor_"><em>group&raquo;myaccount=group</em></a></li>
-<li><a href="#groupxgroup&raquo;myaccount_allRelationshipAnchor_"><em>groupxgroup&raquo;myaccount_all</em></a></li>
-<li><a href="#group=groupe&raquo;service_groupRelationshipAnchor_"><em>group=groupe&raquo;service_group</em></a></li>
-<li><a href="#group&infin;group&raquo;myaccount_group_managerRelationshipAnchor_"><em>group&infin;group&raquo;myaccount_group_manager</em></a></li>
-<li><a href="#group&infin;group&raquo;myaccount_group_userRelationshipAnchor_"><em>group&infin;group&raquo;myaccount_group_user</em></a></li>
-<li><a href="#group=group&raquo;webviewer_typeRelationshipAnchor_"><em>group=group&raquo;webviewer_type</em></a></li>
-</ul>
-</td><td>
-<ul>
-<li><a href="#1ScriptAnchor_">サインイン</a></li>
-<li><a href="#157ScriptAnchor_">グループの追加</a></li>
-<li><a href="#158ScriptAnchor_">チェック分のグループを削除</a></li>
-<li><a href="#159ScriptAnchor_">全てにチェック・グループ</a></li>
-<li><a href="#154ScriptAnchor_">グループ設定</a></li>
-<li><a href="#189ScriptAnchor_">グループ設定画面の初期設定</a></li>
-<li><a href="#188ScriptAnchor_">グループの管理者アカウントを設定する・チェックオフ</a></li>
-<li><a href="#196ScriptAnchor_">グループの利用者アカウントを設定する・チェックオフ</a></li>
-<li><a href="#207ScriptAnchor_">グループの性別構成をグラフ表示する</a></li>
-<li><a href="#126ScriptAnchor_">復元・ガイダンス</a></li>
-</ul>
-</td><td>
-<ul>
-<li><a href="#1388FieldAnchor_"><em>group</em>::_count_of_user</a></li>
-<li><a href="#1389FieldAnchor_"><em>group</em>::_count_of_manager</a></li>
-<li><a href="#13812FieldAnchor_"><em>group</em>::_manager_account_name_list</a></li>
-<li><a href="#13815FieldAnchor_"><em>group</em>::_c_flg_for_group_service_exist</a></li>
-<li><a href="#13817FieldAnchor_"><em>group</em>::_c_flg_for_group_myaccount_manager_exist</a></li>
-<li><a href="#13821FieldAnchor_"><em>group</em>::_c_flg_for_group_myaccount_user_exist</a></li>
-<li><a href="#1409FieldAnchor_"><em>service_group</em>::_c_group_name</a></li>
-</ul>
-</td><td>
-<ul>
-<li><a href="#13VLAnchor_">group_list</a></li>
-</ul>
-</td><td>
-<ul>
-<li><a href="#1LayoutAnchor_">ポータル</a></li>
-<li><a href="#28LayoutAnchor_">グループ設定</a></li>
-<li><a href="#27LayoutAnchor_">group</a></li>
-</ul>
-</td>
-</tr>
-<tr class="regularcharttext" vAlign="top">
 <td bgColor="#787878"><a name="1065116TableAnchor_"/><em>router</em></td><td><a href="#134BaseTableAnchor_">router</a></td><td>portal.fmp12</td><td>
 <ul>
 <li><a href="#myaccount=routerRelationshipAnchor_"><em>myaccount=router</em></a></li>
@@ -10748,12 +10861,14 @@
 <li><a href="#179ScriptAnchor_">b_i_アカウント設定画面の初期設定</a></li>
 <li><a href="#177ScriptAnchor_">アカウントが使えるグループ管理者の設定をする・チェックオフ</a></li>
 <li><a href="#184ScriptAnchor_">アカウントが使えるグループ利用者の設定をする・チェックオフ</a></li>
+<li><a href="#198ScriptAnchor_">アカウントが使えるグループのサービスキーリストをセット</a></li>
 <li><a href="#71ScriptAnchor_">logのフィルタ解除</a></li>
 <li><a href="#7ScriptAnchor_">フィルター・サービス名をクリア</a></li>
 <li><a href="#6ScriptAnchor_">フィルター・グループをクリア</a></li>
 <li><a href="#21ScriptAnchor_">サービスを開く・レコードを追加</a></li>
 <li><a href="#76ScriptAnchor_">全てにチェック・サービス</a></li>
 <li><a href="#78ScriptAnchor_">チェック分のサービスを削除 </a></li>
+<li><a href="#217ScriptAnchor_">テスト用・グループテーブルが更新された時の処理</a></li>
 <li><a href="#158ScriptAnchor_">チェック分のグループを削除</a></li>
 <li><a href="#159ScriptAnchor_">全てにチェック・グループ</a></li>
 <li><a href="#26ScriptAnchor_">自分のlogのフィルタ設定</a></li>
@@ -10848,30 +10963,6 @@
 </td><td>
 <ul>
 <li><a href="#28LayoutAnchor_">グループ設定</a></li>
-</ul>
-</td>
-</tr>
-<tr class="regularcharttext" vAlign="top">
-<td bgColor="#777777"><a name="1065148TableAnchor_"/><em>myaccount&raquo;myaccount_group_manager</em></td><td><a href="#141BaseTableAnchor_">myaccount_group</a></td><td>portal.fmp12</td><td>
-<ul>
-<li><a href="#myaccount&infin;myaccount&raquo;myaccount_group_managerRelationshipAnchor_"><em>myaccount&infin;myaccount&raquo;myaccount_group_manager</em></a></li>
-</ul>
-</td><td>
-<ul>
-<li><a href="#176ScriptAnchor_">アカウントが使えるグループ管理者の設定をする・チェックオン</a></li>
-<li><a href="#177ScriptAnchor_">アカウントが使えるグループ管理者の設定をする・チェックオフ</a></li>
-<li><a href="#198ScriptAnchor_">アカウントが使えるグループのサービスキーリストをセット</a></li>
-</ul>
-</td><td>
-<ul>
-<li><a href="#13060FieldAnchor_"><em>myaccount</em>::_c_group_for_pkey_list_manager</a></li>
-<li><a href="#13082FieldAnchor_"><em>myaccount</em>::_c_group_for_name_list_manager</a></li>
-</ul>
-</td><td>
-<ul></ul>
-</td><td>
-<ul>
-<li><a href="#13LayoutAnchor_">アカウント・管理者</a></li>
 </ul>
 </td>
 </tr>
@@ -11025,27 +11116,6 @@
 <li><a href="#15LayoutAnchor_">log-form</a></li>
 <li><a href="#5LayoutAnchor_">log-list</a></li>
 <li><a href="#30LayoutAnchor_">log-list コピー</a></li>
-</ul>
-</td>
-</tr>
-<tr class="regularcharttext" vAlign="top">
-<td bgColor="#777777"><a name="1065142TableAnchor_"/><em>groupe&raquo;service_group</em></td><td><a href="#140BaseTableAnchor_">service_group</a></td><td>portal.fmp12</td><td>
-<ul>
-<li><a href="#group=groupe&raquo;service_groupRelationshipAnchor_"><em>group=groupe&raquo;service_group</em></a></li>
-</ul>
-</td><td>
-<ul></ul>
-</td><td>
-<ul>
-<li><a href="#13815FieldAnchor_"><em>group</em>::_c_flg_for_group_service_exist</a></li>
-<li><a href="#13816FieldAnchor_"><em>group</em>::_c_name_list_of_service</a></li>
-<li><a href="#13823FieldAnchor_"><em>group</em>::_c_key_list_of_service</a></li>
-</ul>
-</td><td>
-<ul></ul>
-</td><td>
-<ul>
-<li><a href="#28LayoutAnchor_">グループ設定</a></li>
 </ul>
 </td>
 </tr>
@@ -11553,30 +11623,6 @@
 <ul></ul>
 </td><td>
 <ul></ul>
-</td>
-</tr>
-<tr class="regularcharttext" vAlign="top">
-<td bgColor="#777777"><a name="1065151TableAnchor_"/><em>myaccount&raquo;myaccount_group_user</em></td><td><a href="#141BaseTableAnchor_">myaccount_group</a></td><td>portal.fmp12</td><td>
-<ul>
-<li><a href="#myaccount&infin;myaccount&raquo;myaccount_group_userRelationshipAnchor_"><em>myaccount&infin;myaccount&raquo;myaccount_group_user</em></a></li>
-</ul>
-</td><td>
-<ul>
-<li><a href="#180ScriptAnchor_">アカウントが使えるグループ利用者の設定をする・チェックオン</a></li>
-<li><a href="#184ScriptAnchor_">アカウントが使えるグループ利用者の設定をする・チェックオフ</a></li>
-<li><a href="#198ScriptAnchor_">アカウントが使えるグループのサービスキーリストをセット</a></li>
-</ul>
-</td><td>
-<ul>
-<li><a href="#13012FieldAnchor_"><em>myaccount</em>::_c_group_for_pkey_list_user</a></li>
-<li><a href="#13083FieldAnchor_"><em>myaccount</em>::_c_group_for_name_list_user</a></li>
-</ul>
-</td><td>
-<ul></ul>
-</td><td>
-<ul>
-<li><a href="#13LayoutAnchor_">アカウント・管理者</a></li>
-</ul>
 </td>
 </tr>
 <tr class="regularcharttext" vAlign="top">
@@ -13528,7 +13574,8 @@
 <tr class="regularcharttext" valign="top">
 <td><a name="3LayoutAnchor_"/>myaccount</td><td>いいえ</td><td>はい</td><td>
 <ul>
-<li><a href="#3LayoutObjectsAnchor_通常フィールド">18 通常フィールド</a></li>
+<li><a href="#3LayoutObjectsAnchor_通常フィールド">20 通常フィールド</a></li>
+<li><a href="#3LayoutObjectsAnchor_ポータル">1 ポータル</a></li>
 </ul>
 </td><td><a href="#1065091TableAnchor_"><em>myaccount</em></a></td><td>オン</td><td>オフ</td><td>オン</td><td>オン</td><td>
 <ul>
@@ -13621,7 +13668,7 @@
 <tr class="regularcharttext" valign="top">
 <td><a name="27LayoutAnchor_"/>group</td><td>いいえ</td><td>はい</td><td>
 <ul>
-<li><a href="#27LayoutObjectsAnchor_通常フィールド">4 通常フィールド</a></li>
+<li><a href="#27LayoutObjectsAnchor_通常フィールド">6 通常フィールド</a></li>
 </ul>
 </td><td><a href="#1065130TableAnchor_"><em>group</em></a></td><td>オン</td><td>オフ</td><td>オン</td><td>オン</td><td>
 <ul>
@@ -13651,7 +13698,7 @@
 <tr class="regularcharttext" valign="top">
 <td><a name="33LayoutAnchor_"/>myaccount_group</td><td>いいえ</td><td>はい</td><td>
 <ul>
-<li><a href="#33LayoutObjectsAnchor_通常フィールド">3 通常フィールド</a></li>
+<li><a href="#33LayoutObjectsAnchor_通常フィールド">4 通常フィールド</a></li>
 </ul>
 </td><td><a href="#1065147TableAnchor_"><em>myaccount_group</em></a></td><td>オン</td><td>オフ</td><td>オン</td><td>オン</td><td>
 <ul>
@@ -36208,6 +36255,78 @@
 <table width="100%" border="1">
 <tbody>
 <tr class="chartheaders" valign="top">
+<td colspan="6" class="privsetfirst">フィールド名: <a href="#1416FieldAnchor_"><em>myaccount&raquo;myaccount_group_user</em>::external_key_of_group</a></td>
+</tr>
+<tr class="chartsubheads" valign="top">
+<td class="chartheaders" colspan="2">フィールドプロパティ</td><td class="chartheaders" width="14%" colspan="1">座標</td><td class="chartheaders" width="17%" colspan="1">フィールド書式</td><td class="chartheaders" width="30%" colspan="1">フィールド選択時の動作</td><td class="chartheaders" width="10%" colspan="1">クイック検索</td>
+</tr>
+<tr class="regularcharttext" valign="top">
+<td colspan="2"><a name="Field310.000000018.0000000347.0000000232.0000000LayoutObjectAnchor_"/><ul>
+<b>レイアウト名:</b>
+<li><a href="#3LayoutAnchor_">myaccount</a></li>
+</ul>
+</td><td colspan="1">
+<ul>
+<li>上: 310 pt</li>
+<li>左: 18 pt</li>
+<li>下: 347 pt</li>
+<li>右: 232 pt</li>
+</ul>
+<ul>
+<li>アンカー: 左, 上</li>
+</ul>
+</td><td colspan="1">フィールド書式: <ul>
+<li>編集ボックス</li>
+</ul>
+</td><td colspan="1">フィールド選択時の動作:<ul>
+<li>フィールドへの入力を許可する: 検索モード, ブラウズモード</li>
+<li>タッチキーボードタイプ: データタイプのデフォルト</li>
+<li>次のフィールドへの移動に使用するキー: Tab キー</li>
+</ul>
+</td><td colspan="1">はい</td>
+</tr>
+</tbody>
+</table>
+<br>
+<table width="100%" border="1">
+<tbody>
+<tr class="chartheaders" valign="top">
+<td colspan="6" class="privsetfirst">フィールド名: <a href="#1418FieldAnchor_"><em>myaccount&raquo;myaccount_group_user</em>::_c_group_name</a></td>
+</tr>
+<tr class="chartsubheads" valign="top">
+<td class="chartheaders" colspan="2">フィールドプロパティ</td><td class="chartheaders" width="14%" colspan="1">座標</td><td class="chartheaders" width="17%" colspan="1">フィールド書式</td><td class="chartheaders" width="30%" colspan="1">フィールド選択時の動作</td><td class="chartheaders" width="10%" colspan="1">クイック検索</td>
+</tr>
+<tr class="regularcharttext" valign="top">
+<td colspan="2"><a name="Field310.0000000236.0000000347.0000000477.0000000LayoutObjectAnchor_"/><ul>
+<b>レイアウト名:</b>
+<li><a href="#3LayoutAnchor_">myaccount</a></li>
+</ul>
+</td><td colspan="1">
+<ul>
+<li>上: 310 pt</li>
+<li>左: 236 pt</li>
+<li>下: 347 pt</li>
+<li>右: 477 pt</li>
+</ul>
+<ul>
+<li>アンカー: 左, 上</li>
+</ul>
+</td><td colspan="1">フィールド書式: <ul>
+<li>編集ボックス</li>
+</ul>
+</td><td colspan="1">フィールド選択時の動作:<ul>
+<li>フィールドへの入力を許可する: 検索モード, ブラウズモード</li>
+<li>タッチキーボードタイプ: データタイプのデフォルト</li>
+<li>次のフィールドへの移動に使用するキー: Tab キー</li>
+</ul>
+</td><td colspan="1">はい</td>
+</tr>
+</tbody>
+</table>
+<br>
+<table width="100%" border="1">
+<tbody>
+<tr class="chartheaders" valign="top">
 <td colspan="6" class="privsetfirst">フィールド名: <a href="#13030FieldAnchor_"><em>myaccount</em>::auth_set</a></td>
 </tr>
 <tr class="chartsubheads" valign="top">
@@ -36435,6 +36554,54 @@
 <li>次のフィールドへの移動に使用するキー: Tab キー</li>
 </ul>
 </td><td colspan="1">はい</td>
+</tr>
+</tbody>
+</table>
+<br>
+<p>
+<span class="partheading"><a name="3LayoutObjectsAnchor_ポータル"/>ポータル</span>
+</p>
+<table border="1" width="100%">
+<tbody>
+<tr class="chartsubheads" valign="top">
+<td colspan="2">ポータルプロパティ</td><td colspan="1" width="15%">座標</td><td colspan="1" width="10%">フィールド</td><td colspan="2">オプション</td>
+</tr>
+<tr class="regularcharttext" valign="top">
+<td colspan="2"><a name="3Portal305.000000013.0000000397.0000000513.0000000LayoutObjectAnchor_"/><ul>
+<b>オブジェクト名:</b>
+<li>portal_myaccount&raquo;myaccount_group_user</li>
+</ul>
+<ul>
+<b>テーブル:</b>
+<li><a href="#1065151TableAnchor_"><em>myaccount&raquo;myaccount_group_user</em></a></li>
+</ul>
+<ul>
+<b>レイアウト名:</b>
+<li><a href="#3LayoutAnchor_">myaccount</a></li>
+</ul>
+</td><td colspan="1">
+<ul>
+<li>上: 305 pt</li>
+<li>左: 13 pt</li>
+<li>下: 397 pt</li>
+<li>右: 513 pt</li>
+</ul>
+<ul>
+<li>アンカー: 左, 上</li>
+</ul>
+</td><td colspan="1">フィールドオブジェクト<ul>
+<li><a href="#1416FieldAnchor_"><em>myaccount&raquo;myaccount_group_user</em>::external_key_of_group</a> 座標 (310, 18, 347, 232)</li>
+<li><a href="#1418FieldAnchor_"><em>myaccount&raquo;myaccount_group_user</em>::_c_group_name</a> 座標 (310, 236, 347, 477)</li>
+</ul>
+</td><td colspan="2">
+<ul>
+<li>レコードのソート: オフ</li>
+<li>フィルタ計算: なし</li>
+<li>最初の行: 1</li>
+<li>行数: 2</li>
+<li>垂直スクロールバーを表示</li>
+</ul>
+</td>
 </tr>
 </tbody>
 </table>
@@ -40846,6 +41013,84 @@
 </tbody>
 </table>
 <br>
+<table width="100%" border="1">
+<tbody>
+<tr class="chartheaders" valign="top">
+<td colspan="6" class="privsetfirst">フィールド名: <a href="#13823FieldAnchor_"><em>group</em>::_c_key_list_of_service</a></td>
+</tr>
+<tr class="chartsubheads" valign="top">
+<td class="chartheaders" colspan="2">フィールドプロパティ</td><td class="chartheaders" width="14%" colspan="1">座標</td><td class="chartheaders" width="17%" colspan="1">フィールド書式</td><td class="chartheaders" width="30%" colspan="1">フィールド選択時の動作</td><td class="chartheaders" width="10%" colspan="1">クイック検索</td>
+</tr>
+<tr class="regularcharttext" valign="top">
+<td colspan="2"><a name="27Field30.0000000894.000000057.00000001117.0000000LayoutObjectAnchor_"/><ul>
+<b>レイアウト名:</b>
+<li><a href="#27LayoutAnchor_">group</a></li>
+<p></p>
+<b>表示切り替え:</b>
+<li>表形式でのみ表示可能</li>
+</ul>
+</td><td colspan="1">
+<ul>
+<li>上: 30 pt</li>
+<li>左: 894 pt</li>
+<li>下: 57 pt</li>
+<li>右: 1117 pt</li>
+</ul>
+<ul>
+<li>アンカー: 左, 上</li>
+</ul>
+</td><td colspan="1">フィールド書式: <ul>
+<li>編集ボックス</li>
+</ul>
+</td><td colspan="1">フィールド選択時の動作:<ul>
+<li>フィールドへの入力を許可する: 検索モード, ブラウズモード</li>
+<li>タッチキーボードタイプ: データタイプのデフォルト</li>
+<li>次のフィールドへの移動に使用するキー: Tab キー</li>
+</ul>
+</td><td colspan="1">はい</td>
+</tr>
+</tbody>
+</table>
+<br>
+<table width="100%" border="1">
+<tbody>
+<tr class="chartheaders" valign="top">
+<td colspan="6" class="privsetfirst">フィールド名: <a href="#13816FieldAnchor_"><em>group</em>::_c_name_list_of_service</a></td>
+</tr>
+<tr class="chartsubheads" valign="top">
+<td class="chartheaders" colspan="2">フィールドプロパティ</td><td class="chartheaders" width="14%" colspan="1">座標</td><td class="chartheaders" width="17%" colspan="1">フィールド書式</td><td class="chartheaders" width="30%" colspan="1">フィールド選択時の動作</td><td class="chartheaders" width="10%" colspan="1">クイック検索</td>
+</tr>
+<tr class="regularcharttext" valign="top">
+<td colspan="2"><a name="27Field30.00000001117.000000057.00000001237.0000000LayoutObjectAnchor_"/><ul>
+<b>レイアウト名:</b>
+<li><a href="#27LayoutAnchor_">group</a></li>
+<p></p>
+<b>表示切り替え:</b>
+<li>表形式でのみ表示可能</li>
+</ul>
+</td><td colspan="1">
+<ul>
+<li>上: 30 pt</li>
+<li>左: 1117 pt</li>
+<li>下: 57 pt</li>
+<li>右: 1237 pt</li>
+</ul>
+<ul>
+<li>アンカー: 左, 上</li>
+</ul>
+</td><td colspan="1">フィールド書式: <ul>
+<li>編集ボックス</li>
+</ul>
+</td><td colspan="1">フィールド選択時の動作:<ul>
+<li>フィールドへの入力を許可する: 検索モード, ブラウズモード</li>
+<li>タッチキーボードタイプ: データタイプのデフォルト</li>
+<li>次のフィールドへの移動に使用するキー: Tab キー</li>
+</ul>
+</td><td colspan="1">はい</td>
+</tr>
+</tbody>
+</table>
+<br>
 <p>
 <span class="partheading">レイアウトオブジェクト: <a href="#37LayoutAnchor_">service_group</a></span>
 </p>
@@ -41053,16 +41298,16 @@
 <td class="chartheaders" colspan="2">フィールドプロパティ</td><td class="chartheaders" width="14%" colspan="1">座標</td><td class="chartheaders" width="17%" colspan="1">フィールド書式</td><td class="chartheaders" width="30%" colspan="1">フィールド選択時の動作</td><td class="chartheaders" width="10%" colspan="1">クイック検索</td>
 </tr>
 <tr class="regularcharttext" valign="top">
-<td colspan="2"><a name="33Field114.0000000183.0000000151.0000000436.0000000LayoutObjectAnchor_"/><ul>
+<td colspan="2"><a name="33Field114.0000000658.0000000151.0000000911.0000000LayoutObjectAnchor_"/><ul>
 <b>レイアウト名:</b>
 <li><a href="#33LayoutAnchor_">myaccount_group</a></li>
 </ul>
 </td><td colspan="1">
 <ul>
 <li>上: 114 pt</li>
-<li>左: 183 pt</li>
+<li>左: 658 pt</li>
 <li>下: 151 pt</li>
-<li>右: 436 pt</li>
+<li>右: 911 pt</li>
 </ul>
 <ul>
 <li>アンカー: 左, 上</li>
@@ -41089,16 +41334,16 @@
 <td class="chartheaders" colspan="2">フィールドプロパティ</td><td class="chartheaders" width="14%" colspan="1">座標</td><td class="chartheaders" width="17%" colspan="1">フィールド書式</td><td class="chartheaders" width="30%" colspan="1">フィールド選択時の動作</td><td class="chartheaders" width="10%" colspan="1">クイック検索</td>
 </tr>
 <tr class="regularcharttext" valign="top">
-<td colspan="2"><a name="33Field155.0000000183.0000000192.0000000436.0000000LayoutObjectAnchor_"/><ul>
+<td colspan="2"><a name="33Field155.0000000658.0000000192.0000000911.0000000LayoutObjectAnchor_"/><ul>
 <b>レイアウト名:</b>
 <li><a href="#33LayoutAnchor_">myaccount_group</a></li>
 </ul>
 </td><td colspan="1">
 <ul>
 <li>上: 155 pt</li>
-<li>左: 183 pt</li>
+<li>左: 658 pt</li>
 <li>下: 192 pt</li>
-<li>右: 436 pt</li>
+<li>右: 911 pt</li>
 </ul>
 <ul>
 <li>アンカー: 左, 上</li>
@@ -41125,16 +41370,52 @@
 <td class="chartheaders" colspan="2">フィールドプロパティ</td><td class="chartheaders" width="14%" colspan="1">座標</td><td class="chartheaders" width="17%" colspan="1">フィールド書式</td><td class="chartheaders" width="30%" colspan="1">フィールド選択時の動作</td><td class="chartheaders" width="10%" colspan="1">クイック検索</td>
 </tr>
 <tr class="regularcharttext" valign="top">
-<td colspan="2"><a name="33Field200.0000000183.0000000237.0000000436.0000000LayoutObjectAnchor_"/><ul>
+<td colspan="2"><a name="33Field200.0000000658.0000000237.0000000911.0000000LayoutObjectAnchor_"/><ul>
 <b>レイアウト名:</b>
 <li><a href="#33LayoutAnchor_">myaccount_group</a></li>
 </ul>
 </td><td colspan="1">
 <ul>
 <li>上: 200 pt</li>
-<li>左: 183 pt</li>
+<li>左: 658 pt</li>
 <li>下: 237 pt</li>
-<li>右: 436 pt</li>
+<li>右: 911 pt</li>
+</ul>
+<ul>
+<li>アンカー: 左, 上</li>
+</ul>
+</td><td colspan="1">フィールド書式: <ul>
+<li>編集ボックス</li>
+</ul>
+</td><td colspan="1">フィールド選択時の動作:<ul>
+<li>フィールドへの入力を許可する: 検索モード, ブラウズモード</li>
+<li>タッチキーボードタイプ: データタイプのデフォルト</li>
+<li>次のフィールドへの移動に使用するキー: Tab キー</li>
+</ul>
+</td><td colspan="1">はい</td>
+</tr>
+</tbody>
+</table>
+<br>
+<table width="100%" border="1">
+<tbody>
+<tr class="chartheaders" valign="top">
+<td colspan="6" class="privsetfirst">フィールド名: <a href="#14110FieldAnchor_"><em>myaccount_group</em>::_c_myaccount_name</a></td>
+</tr>
+<tr class="chartsubheads" valign="top">
+<td class="chartheaders" colspan="2">フィールドプロパティ</td><td class="chartheaders" width="14%" colspan="1">座標</td><td class="chartheaders" width="17%" colspan="1">フィールド書式</td><td class="chartheaders" width="30%" colspan="1">フィールド選択時の動作</td><td class="chartheaders" width="10%" colspan="1">クイック検索</td>
+</tr>
+<tr class="regularcharttext" valign="top">
+<td colspan="2"><a name="33Field119.0000000181.0000000156.0000000434.0000000LayoutObjectAnchor_"/><ul>
+<b>レイアウト名:</b>
+<li><a href="#33LayoutAnchor_">myaccount_group</a></li>
+</ul>
+</td><td colspan="1">
+<ul>
+<li>上: 119 pt</li>
+<li>左: 181 pt</li>
+<li>下: 156 pt</li>
+<li>右: 434 pt</li>
 </ul>
 <ul>
 <li>アンカー: 左, 上</li>
@@ -41668,6 +41949,12 @@
 </tr>
 <tr>
 <td class="script_hier"><a name="173ScriptAnchor_toc"></a><a href="#173ScriptAnchor_">サービスが使えるグループの設定をする・チェックオフ</a></td>
+</tr>
+<tr>
+<td class="script_hier"><a name="218ScriptAnchor_toc"></a><a href="#218ScriptAnchor_">-</a></td>
+</tr>
+<tr>
+<td class="script_hier"><a name="217ScriptAnchor_toc"></a><a href="#217ScriptAnchor_">テスト用・グループテーブルが更新された時の処理</a></td>
 </tr>
 </tbody>
 </table>
@@ -43128,9 +43415,23 @@
 <li>現在のスクリプト終了 [ 結果: False ]</li>
 <li>End If</li>
 <li></li>
-<li>新規ウインドウ (Web 上の仮想ウインドウ)  [ スタイル: ドキュメント; 使用するレイアウト: 「myaccount」 (myaccount); 閉じる: はい; 最小化: はい; 最大化: はい; サイズ変更: はい; メニューバー: はい; 親ウインドウを淡色表示: いいえ; ツールバー: はい ]</li>
+<li>新規ウインドウ [ スタイル: ドキュメント; 使用するレイアウト: 「myaccount」 (myaccount); 閉じる: はい; 最小化: はい; 最大化: はい; サイズ変更: はい; メニューバー: はい; 親ウインドウを淡色表示: いいえ; ツールバー: はい ]</li>
 <li>新規レコード/検索条件</li>
 <li>フィールド設定 [ myaccount::account_name; $account ]</li>
+<li></li>
+<li>#デフォルトグループを検索して主キーのリストを取得する</li>
+<li>変数を設定 [ $default_group_list; 値:RF_V_SQL_default_group_for_user_list ]</li>
+<li>変数を設定 [ $count_of_default_group; 値:ValueCount ( $default_group_list ) ]</li>
+<li>オブジェクトへ移動 [ オブジェクト名: "portal_myaccount&raquo;myaccount_group_user" ]</li>
+<li></li>
+<li>Loop</li>
+<li>Exit Loop If [ $count_of_default_group &lt;= 0 ]</li>
+<li>ポータル内の行へ移動
+[ 選択; 最後の ]</li>
+<li>フィールド設定 [ myaccount&raquo;myaccount_group_user::external_key_of_group; GetValue ( $default_group_list ; $count_of_default_group ) ]</li>
+<li>変数を設定 [ $count_of_default_group; 値:$count_of_default_group - 1 ]</li>
+<li>End Loop</li>
+<li></li>
 <li>ウインドウを閉じる [ 現在のウインドウ ]</li>
 <li></li>
 <li>ポップオーバーを閉じる </li>
@@ -43147,6 +43448,7 @@
 <td class="chartheadersnobg">このスクリプトで使用されるフィールド</td><td class="regularcharttext">
 <ul>
 <li><a href="#1306FieldAnchor_"><em>myaccount</em>::account_name</a></li>
+<li><a href="#1416FieldAnchor_"><em>myaccount&raquo;myaccount_group_user</em>::external_key_of_group</a></li>
 <li><a href="#13410FieldAnchor_"><em>router</em>::_g_json</a></li>
 </ul>
 </td>
@@ -43167,6 +43469,7 @@
 <td class="chartheadersnobg">このスクリプトで使用されるテーブル</td><td class="regularcharttext">
 <ul>
 <li><a href="#130BaseTableAnchor_">myaccount</a></li>
+<li><a href="#141BaseTableAnchor_">myaccount_group</a></li>
 <li><a href="#134BaseTableAnchor_">router</a></li>
 </ul>
 </td>
@@ -43175,6 +43478,7 @@
 <td class="chartheadersnobg">このスクリプトで使用されるテーブルオカレンス</td><td class="regularcharttext">
 <ul>
 <li><a href="#1065091TableAnchor_"><em>myaccount</em></a></li>
+<li><a href="#1065151TableAnchor_"><em>myaccount&raquo;myaccount_group_user</em></a></li>
 <li><a href="#1065116TableAnchor_"><em>router</em></a></li>
 </ul>
 </td>
@@ -43184,6 +43488,7 @@
 <ul>
 <li><a href="#70CustomFunctionAnchor_">RF_C_dialog_hedder</a></li>
 <li><a href="#66CustomFunctionAnchor_">RF_C_SQL_myaccount_check</a></li>
+<li><a href="#108CustomFunctionAnchor_">RF_V_SQL_default_group_for_user_list</a></li>
 <li><a href="#42CustomFunctionAnchor_">RF_V_json_current_portal</a></li>
 </ul>
 </td>
@@ -43750,7 +44055,7 @@
 <li></li>
 <li>変数を設定 [ $json; 値:RF_V_json ( "" ; "" ; "" ) ]</li>
 <li></li>
-<li>新規ウインドウ (Web 上の仮想ウインドウ)  [ スタイル: ドキュメント; 使用するレイアウト: 「menu_controller」 (menu_controller); 閉じる: はい; 最小化: はい; 最大化: はい; サイズ変更: はい; メニューバー: はい; 親ウインドウを淡色表示: いいえ; ツールバー: はい ]</li>
+<li>新規ウインドウ [ スタイル: ドキュメント; 使用するレイアウト: 「menu_controller」 (menu_controller); 閉じる: はい; 最小化: はい; 最大化: はい; サイズ変更: はい; メニューバー: はい; 親ウインドウを淡色表示: いいえ; ツールバー: はい ]</li>
 <li></li>
 <li>全レコードを表示</li>
 <li></li>
@@ -43784,7 +44089,7 @@
 <li>#サービス設定画面・ボタンバーオブジェクト名の設定</li>
 <li>変数を設定 [ $json; 値:RF_V_json_set_service_button_bar ( $json ) ]</li>
 <li></li>
-<li>新規ウインドウ (Web 上の仮想ウインドウ)  [ スタイル: ドキュメント; 使用するレイアウト: 「protocol_controller」 (protocol_controller); 閉じる: はい; 最小化: はい; 最大化: はい; サイズ変更: はい; メニューバー: はい; 親ウインドウを淡色表示: いいえ; ツールバー: はい ]</li>
+<li>新規ウインドウ [ スタイル: ドキュメント; 使用するレイアウト: 「protocol_controller」 (protocol_controller); 閉じる: はい; 最小化: はい; 最大化: はい; サイズ変更: はい; メニューバー: はい; 親ウインドウを淡色表示: いいえ; ツールバー: はい ]</li>
 <li></li>
 <li>全レコードを表示</li>
 <li></li>
@@ -46235,11 +46540,9 @@
 <li></li>
 <li>#アカウントが使えるグループのサービスキーリストをセット</li>
 <li></li>
-<li>変数を設定 [ $service_key_list_for_manager; 値:myaccount&raquo;myaccount_group_manager::_c_service_list ]</li>
-<li>フィールド設定 [ myaccount≫service_all::_g_myaccount_manager_service_list; $service_key_list_for_manager ]</li>
+<li>フィールド設定 [ myaccount≫service_all::_g_myaccount_manager_service_list; RF_V_SQL_service_list_by_manager_account ( myaccount::主キー ) ]</li>
 <li></li>
-<li>変数を設定 [ $service_key_list_for_user; 値:myaccount&raquo;myaccount_group_user::_c_service_list ]</li>
-<li>フィールド設定 [ myaccount≫service_all::_g_myaccount_user_service_list; $service_key_list_for_user ]</li>
+<li>フィールド設定 [ myaccount≫service_all::_g_myaccount_user_service_list; RF_V_SQL_service_list_by_user_account ( myaccount::主キー ) ]</li>
 <li></li>
 <li>現在のスクリプト終了 [ 結果: True ]</li>
 </ul>
@@ -46248,9 +46551,8 @@
 <tr vAlign="top">
 <td class="chartheadersnobg">このスクリプトで使用されるフィールド</td><td class="regularcharttext">
 <ul>
-<li><a href="#14111FieldAnchor_"><em>myaccount&raquo;myaccount_group_manager</em>::_c_service_list</a></li>
+<li><a href="#1301FieldAnchor_"><em>myaccount</em>::主キー</a></li>
 <li><a href="#13244FieldAnchor_"><em>myaccount≫service_all</em>::_g_myaccount_manager_service_list</a></li>
-<li><a href="#14111FieldAnchor_"><em>myaccount&raquo;myaccount_group_user</em>::_c_service_list</a></li>
 <li><a href="#13245FieldAnchor_"><em>myaccount≫service_all</em>::_g_myaccount_user_service_list</a></li>
 </ul>
 </td>
@@ -46268,7 +46570,7 @@
 <tr vAlign="top">
 <td class="chartheadersnobg">このスクリプトで使用されるテーブル</td><td class="regularcharttext">
 <ul>
-<li><a href="#141BaseTableAnchor_">myaccount_group</a></li>
+<li><a href="#130BaseTableAnchor_">myaccount</a></li>
 <li><a href="#132BaseTableAnchor_">service</a></li>
 </ul>
 </td>
@@ -46276,15 +46578,17 @@
 <tr vAlign="top">
 <td class="chartheadersnobg">このスクリプトで使用されるテーブルオカレンス</td><td class="regularcharttext">
 <ul>
-<li><a href="#1065148TableAnchor_"><em>myaccount&raquo;myaccount_group_manager</em></a></li>
-<li><a href="#1065151TableAnchor_"><em>myaccount&raquo;myaccount_group_user</em></a></li>
+<li><a href="#1065091TableAnchor_"><em>myaccount</em></a></li>
 <li><a href="#1065097TableAnchor_"><em>myaccount≫service_all</em></a></li>
 </ul>
 </td>
 </tr>
 <tr vAlign="top">
 <td class="chartheadersnobg">このスクリプトで使用されるカスタム関数</td><td class="regularcharttext">
-<ul></ul>
+<ul>
+<li><a href="#110CustomFunctionAnchor_">RF_V_SQL_service_list_by_manager_account</a></li>
+<li><a href="#109CustomFunctionAnchor_">RF_V_SQL_service_list_by_user_account</a></li>
+</ul>
 </td>
 </tr>
 <tr vAlign="top">
@@ -48214,7 +48518,7 @@
 <li></li>
 <li>#サービスの追加</li>
 <li></li>
-<li>新規ウインドウ (Web 上の仮想ウインドウ)  [ スタイル: カード; 使用するレイアウト: 「サービス設定」 (service); 閉じる: いいえ; 最小化: いいえ; 最大化: いいえ; サイズ変更: いいえ; メニューバー: いいえ; 親ウインドウを淡色表示: はい; ツールバー: いいえ ]</li>
+<li>新規ウインドウ [ スタイル: カード; 使用するレイアウト: 「サービス設定」 (service); 閉じる: いいえ; 最小化: いいえ; 最大化: いいえ; サイズ変更: いいえ; メニューバー: いいえ; 親ウインドウを淡色表示: はい; ツールバー: いいえ ]</li>
 <li>ウインドウの調整
 [ 収まるようにサイズ変更 ]</li>
 <li></li>
@@ -49552,7 +49856,7 @@
 <table class="script_navbar">
 <tbody>
 <tr class="script_navbar">
-<a name="173ScriptAnchor_"></a><td class="script_navbar"><a href="#172ScriptAnchor_"><span>前のスクリプト: [サービスが使えるグループの設定をする・チェックオン]</span></a></td><td class="script_navbar"><a href="#14ScriptAnchor_"><span>親フォルダ: [サービス]</span></a></td><td class="script_navbar"></td>
+<a name="173ScriptAnchor_"></a><td class="script_navbar"><a href="#172ScriptAnchor_"><span>前のスクリプト: [サービスが使えるグループの設定をする・チェックオン]</span></a></td><td class="script_navbar"><a href="#14ScriptAnchor_"><span>親フォルダ: [サービス]</span></a></td><td class="script_navbar"><a href="#218ScriptAnchor_"><span>次のスクリプト: [-]</span></a></td>
 </tr>
 </tbody>
 </table>
@@ -49685,6 +49989,190 @@
 </tbody>
 </table>
 <br>
+<table class="script_navbar">
+<tbody>
+<tr class="script_navbar">
+<a name="218ScriptAnchor_"></a><td class="script_navbar"><a href="#173ScriptAnchor_"><span>前のスクリプト: [サービスが使えるグループの設定をする・チェックオフ]</span></a></td><td class="script_navbar"><a href="#14ScriptAnchor_"><span>親フォルダ: [サービス]</span></a></td><td class="script_navbar"><a href="#217ScriptAnchor_"><span>次のスクリプト: [テスト用・グループテーブルが更新された時の処理]</span></a></td>
+</tr>
+</tbody>
+</table>
+<table width="100%" border="1">
+<tbody>
+<tr class="privsetfirst" vAlign="top">
+<td width="35%">スクリプト名</td><td width="65%">-</td>
+</tr>
+<tr vAlign="top">
+<td class="chartheadersnobg">スクリプトを完全アクセス権で実行</td><td class="regularcharttext">オフ</td>
+</tr>
+<tr vAlign="top">
+<td class="chartheadersnobg">Siri ショートカットを表示</td><td class="regularcharttext">オフ</td>
+</tr>
+<tr vAlign="top">
+<td class="chartheadersnobg">メニューに表示させる</td><td class="regularcharttext">いいえ</td>
+</tr>
+<tr vAlign="top">
+<td class="chartheadersnobg">このスクリプトを使用するレイアウト</td><td class="regularcharttext">
+<ul></ul>
+</td>
+</tr>
+<tr vAlign="top">
+<td class="chartheadersnobg">このスクリプトを使用するスクリプト</td><td class="regularcharttext">
+<ul></ul>
+</td>
+</tr>
+<tr vAlign="top">
+<td class="chartsubheads" colSpan="2">スクリプト編集</td>
+</tr>
+<tr vAlign="top">
+<td class="chartheadersnobg">スクリプトステップ</td><td class="regularcharttext">
+<ul></ul>
+</td>
+</tr>
+<tr vAlign="top">
+<td class="chartheadersnobg">このスクリプトで使用されるフィールド</td><td class="regularcharttext">
+<ul></ul>
+</td>
+</tr>
+<tr vAlign="top">
+<td class="chartheadersnobg">このスクリプトで使用されるスクリプト</td><td class="regularcharttext">
+<ul></ul>
+</td>
+</tr>
+<tr vAlign="top">
+<td class="chartheadersnobg">このスクリプトで使用されるレイアウト</td><td class="regularcharttext">
+<ul></ul>
+</td>
+</tr>
+<tr vAlign="top">
+<td class="chartheadersnobg">このスクリプトで使用されるテーブル</td><td class="regularcharttext">
+<ul></ul>
+</td>
+</tr>
+<tr vAlign="top">
+<td class="chartheadersnobg">このスクリプトで使用されるテーブルオカレンス</td><td class="regularcharttext">
+<ul></ul>
+</td>
+</tr>
+<tr vAlign="top">
+<td class="chartheadersnobg">このスクリプトで使用されるカスタム関数</td><td class="regularcharttext">
+<ul></ul>
+</td>
+</tr>
+<tr vAlign="top">
+<td class="chartheadersnobg">このスクリプトで使用されるカスタムメニューセット</td><td class="regularcharttext">
+<ul></ul>
+</td>
+</tr>
+</tbody>
+</table>
+<br>
+<table class="script_navbar">
+<tbody>
+<tr class="script_navbar">
+<a name="217ScriptAnchor_"></a><td class="script_navbar"><a href="#218ScriptAnchor_"><span>前のスクリプト: [-]</span></a></td><td class="script_navbar"><a href="#14ScriptAnchor_"><span>親フォルダ: [サービス]</span></a></td><td class="script_navbar"></td>
+</tr>
+</tbody>
+</table>
+<table width="100%" border="1">
+<tbody>
+<tr class="privsetfirst" vAlign="top">
+<td width="35%">スクリプト名</td><td width="65%">テスト用・グループテーブルが更新された時の処理</td>
+</tr>
+<tr vAlign="top">
+<td class="chartheadersnobg">スクリプトを完全アクセス権で実行</td><td class="regularcharttext">オフ</td>
+</tr>
+<tr vAlign="top">
+<td class="chartheadersnobg">Siri ショートカットを表示</td><td class="regularcharttext">オフ</td>
+</tr>
+<tr vAlign="top">
+<td class="chartheadersnobg">メニューに表示させる</td><td class="regularcharttext">いいえ</td>
+</tr>
+<tr vAlign="top">
+<td class="chartheadersnobg">このスクリプトを使用するレイアウト</td><td class="regularcharttext">
+<ul></ul>
+</td>
+</tr>
+<tr vAlign="top">
+<td class="chartheadersnobg">このスクリプトを使用するスクリプト</td><td class="regularcharttext">
+<ul></ul>
+</td>
+</tr>
+<tr vAlign="top">
+<td class="chartsubheads" colSpan="2">スクリプト編集</td>
+</tr>
+<tr vAlign="top">
+<td class="chartheadersnobg">スクリプトステップ</td><td class="regularcharttext">
+<ul>
+<li></li>
+<li>#グループテーブルが更新された時の処理</li>
+<li></li>
+<li>//  フィールド設定 [ group::_c_key_list_of_service; List ( groupe&raquo;service_group::external_key_of_service ) ]</li>
+<li></li>
+<li></li>
+<li>//  フィールド設定 [ group::_c_name_list_of_service; List ( groupe&raquo;service_group::_c_service_name ) ]</li>
+<li></li>
+<li></li>
+<li>変数を設定 [ $dummy; 値:RF_V_SQL_service_list_by_user_account ( myaccount::主キー ) ]</li>
+<li></li>
+<li>現在のスクリプト終了 [ 結果: True ]</li>
+<li></li>
+</ul>
+</td>
+</tr>
+<tr vAlign="top">
+<td class="chartheadersnobg">このスクリプトで使用されるフィールド</td><td class="regularcharttext">
+<ul>
+<li><a href="#1406FieldAnchor_"><em>groupe&raquo;service_group</em>::external_key_of_service</a></li>
+<li><a href="#13823FieldAnchor_"><em>group</em>::_c_key_list_of_service</a></li>
+<li><a href="#14010FieldAnchor_"><em>groupe&raquo;service_group</em>::_c_service_name</a></li>
+<li><a href="#13816FieldAnchor_"><em>group</em>::_c_name_list_of_service</a></li>
+<li><a href="#1301FieldAnchor_"><em>myaccount</em>::主キー</a></li>
+</ul>
+</td>
+</tr>
+<tr vAlign="top">
+<td class="chartheadersnobg">このスクリプトで使用されるスクリプト</td><td class="regularcharttext">
+<ul></ul>
+</td>
+</tr>
+<tr vAlign="top">
+<td class="chartheadersnobg">このスクリプトで使用されるレイアウト</td><td class="regularcharttext">
+<ul></ul>
+</td>
+</tr>
+<tr vAlign="top">
+<td class="chartheadersnobg">このスクリプトで使用されるテーブル</td><td class="regularcharttext">
+<ul>
+<li><a href="#138BaseTableAnchor_">group</a></li>
+<li><a href="#130BaseTableAnchor_">myaccount</a></li>
+<li><a href="#140BaseTableAnchor_">service_group</a></li>
+</ul>
+</td>
+</tr>
+<tr vAlign="top">
+<td class="chartheadersnobg">このスクリプトで使用されるテーブルオカレンス</td><td class="regularcharttext">
+<ul>
+<li><a href="#1065130TableAnchor_"><em>group</em></a></li>
+<li><a href="#1065142TableAnchor_"><em>groupe&raquo;service_group</em></a></li>
+<li><a href="#1065091TableAnchor_"><em>myaccount</em></a></li>
+</ul>
+</td>
+</tr>
+<tr vAlign="top">
+<td class="chartheadersnobg">このスクリプトで使用されるカスタム関数</td><td class="regularcharttext">
+<ul>
+<li><a href="#109CustomFunctionAnchor_">RF_V_SQL_service_list_by_user_account</a></li>
+</ul>
+</td>
+</tr>
+<tr vAlign="top">
+<td class="chartheadersnobg">このスクリプトで使用されるカスタムメニューセット</td><td class="regularcharttext">
+<ul></ul>
+</td>
+</tr>
+</tbody>
+</table>
+<br>
 <p>
 <span class="partheading"><a name="150ScriptAnchor_"></a><a href="#150ScriptAnchor_toc">グループ</a></span>
 </p>
@@ -49730,7 +50218,7 @@
 <li></li>
 <li>#グループの追加</li>
 <li></li>
-<li>新規ウインドウ (Web 上の仮想ウインドウ)  [ スタイル: カード; 使用するレイアウト: 「グループ設定」 (group); 閉じる: いいえ; 最小化: いいえ; 最大化: いいえ; サイズ変更: いいえ; メニューバー: いいえ; 親ウインドウを淡色表示: はい; ツールバー: いいえ ]</li>
+<li>新規ウインドウ [ スタイル: カード; 使用するレイアウト: 「グループ設定」 (group); 閉じる: いいえ; 最小化: いいえ; 最大化: いいえ; サイズ変更: いいえ; メニューバー: いいえ; 親ウインドウを淡色表示: はい; ツールバー: いいえ ]</li>
 <li>//  ウインドウの調整
 [ 収まるようにサイズ変更 ]</li>
 <li></li>
@@ -49746,7 +50234,7 @@
 <li></li>
 <li>レコード/検索条件確定</li>
 <li></li>
-<li>新規ウインドウ (Web 上の仮想ウインドウ)  [ スタイル: カード; 使用するレイアウト: 「グループ設定」 (group); 閉じる: いいえ; 最小化: いいえ; 最大化: いいえ; サイズ変更: いいえ; メニューバー: いいえ; 親ウインドウを淡色表示: はい; ツールバー: いいえ ]</li>
+<li>新規ウインドウ [ スタイル: カード; 使用するレイアウト: 「グループ設定」 (group); 閉じる: いいえ; 最小化: いいえ; 最大化: いいえ; サイズ変更: いいえ; メニューバー: いいえ; 親ウインドウを淡色表示: はい; ツールバー: いいえ ]</li>
 <li>ウインドウの調整
 [ 収まるようにサイズ変更 ]</li>
 <li></li>
@@ -54403,7 +54891,7 @@
 <li>//  現在のスクリプト終了 [ 結果: False ]</li>
 <li>//  End If</li>
 <li></li>
-<li>//  新規ウインドウ (Web 上の仮想ウインドウ)  [ スタイル: フローティングドキュメント; 使用するレイアウト: 「ログ」 (log); 閉じる: はい; 最小化: いいえ; 最大化: いいえ; サイズ変更: いいえ; メニューバー: いいえ; 親ウインドウを淡色表示: いいえ; ツールバー: いいえ ]</li>
+<li>//  新規ウインドウ [ スタイル: フローティングドキュメント; 使用するレイアウト: 「ログ」 (log); 閉じる: はい; 最小化: いいえ; 最大化: いいえ; サイズ変更: いいえ; メニューバー: いいえ; 親ウインドウを淡色表示: いいえ; ツールバー: いいえ ]</li>
 <li></li>
 <li>関連レコードへ移動 [ テーブル: 「myaccount≫log_all」; 使用するレイアウト: 「ログ」 (log) ]
 [ 関連レコードのみを表示; 新規ウインドウ ]</li>
@@ -55936,8 +56424,7 @@
 <li>#ログレコードの親子関係を保つために親の作成タイムスタンプを共通のキーに設定する</li>
 <li>関連レコードへ移動 [ テーブル: 「log≫primary≫log_dec」; 使用するレイアウト: 「log-list」 (log) ]
 [ 関連レコードのみを表示 ]</li>
-<li>フィールド内容の全置換 [ log::_c_parent_create_timestamp; 計算で置き換える: log≫primary≫log_dec::作成情報タイムスタンプ ]
-[ ダイアログありで実行（互換性なし） ]</li>
+<li>フィールド内容の全置換 [ log::_c_parent_create_timestamp; 計算で置き換える: log≫primary≫log_dec::作成情報タイムスタンプ ]</li>
 <li></li>
 <li>現在のスクリプト終了 [ 結果: log::主キー ]</li>
 </ul>
@@ -56044,7 +56531,7 @@
 <li></li>
 <li>レコード/検索条件確定</li>
 <li></li>
-<li>新規ウインドウ (Web 上の仮想ウインドウ)  [ スタイル: カード; 使用するレイアウト: 「環境設定」 (env); 閉じる: いいえ; 最小化: いいえ; 最大化: いいえ; サイズ変更: いいえ; メニューバー: いいえ; 親ウインドウを淡色表示: はい; ツールバー: いいえ ]</li>
+<li>新規ウインドウ [ スタイル: カード; 使用するレイアウト: 「環境設定」 (env); 閉じる: いいえ; 最小化: いいえ; 最大化: いいえ; サイズ変更: いいえ; メニューバー: いいえ; 親ウインドウを淡色表示: はい; ツールバー: いいえ ]</li>
 <li>ウインドウの調整
 [ 収まるようにサイズ変更 ]</li>
 <li></li>
@@ -59427,7 +59914,7 @@ JSONSetElement ( "" ; [ "fieldData" ; $JSON変換後 ; JSONRaw ] ; [ "script" ; 
 <li></li>
 <li>#監査ログの表示</li>
 <li></li>
-<li>新規ウインドウ (Web 上の仮想ウインドウ)  [ スタイル: カード; 使用するレイアウト: 「監査ログ」 (audit); 閉じる: いいえ; 最小化: いいえ; 最大化: いいえ; サイズ変更: いいえ; メニューバー: いいえ; 親ウインドウを淡色表示: はい; ツールバー: いいえ ]</li>
+<li>新規ウインドウ [ スタイル: カード; 使用するレイアウト: 「監査ログ」 (audit); 閉じる: いいえ; 最小化: いいえ; 最大化: いいえ; サイズ変更: いいえ; メニューバー: いいえ; 親ウインドウを淡色表示: はい; ツールバー: いいえ ]</li>
 <li></li>
 <li>フィールド設定 [ audit::last_update; Get ( タイムスタンプ ) ]</li>
 <li></li>
@@ -60235,6 +60722,9 @@ JSONSetElement ( "" ; [ "fieldData" ; $JSON変換後 ; JSONRaw ] ; [ "script" ; 
 <tr class="regularcharttext">
 <td><a name="60AccountAnchor_"/>user06</td><td>*********</td><td>アクティブ</td><td>FileMaker ファイル</td><td><a href="#11PrivilegeSetAnchor_">一般ユーザ</a></td><td></td><td>オフ</td>
 </tr>
+<tr class="regularcharttext">
+<td><a name="65AccountAnchor_"/>user08</td><td>*********</td><td>アクティブ</td><td>FileMaker ファイル</td><td><a href="#11PrivilegeSetAnchor_">一般ユーザ</a></td><td></td><td>オフ</td>
+</tr>
 </tbody>
 </table>
 <p>
@@ -60409,7 +60899,7 @@ JSONSetElement ( "" ; [ "fieldData" ; $JSON変換後 ; JSONRaw ] ; [ "script" ; 
 <td class="chartheadersnobg" width="11%">説明</td><td class="regularcharttext" width="89%">新規ユーザ登録した際のデフォルトアクセス権セット</td>
 </tr>
 <tr vAlign="top">
-<td class="chartheadersnobg">使用者</td><td class="regularcharttext"><a href="#1AccountAnchor_">[ゲスト]</a>, <a href="#44AccountAnchor_">user01</a>, <a href="#53AccountAnchor_">hinansya_a</a>, <a href="#54AccountAnchor_">hinansya_b</a>, <a href="#59AccountAnchor_">user04</a>, <a href="#60AccountAnchor_">user06</a></td>
+<td class="chartheadersnobg">使用者</td><td class="regularcharttext"><a href="#1AccountAnchor_">[ゲスト]</a>, <a href="#44AccountAnchor_">user01</a>, <a href="#53AccountAnchor_">hinansya_a</a>, <a href="#54AccountAnchor_">hinansya_b</a>, <a href="#59AccountAnchor_">user04</a>, <a href="#60AccountAnchor_">user06</a>, <a href="#65AccountAnchor_">user08</a></td>
 </tr>
 </tbody>
 </table>
@@ -62750,6 +63240,102 @@ _json
 </td><td>
 <ul>
 <li><a href="#82ScriptAnchor_">b_メイン画面・メニューを選択したらスライドに移動</a></li>
+</ul>
+</td>
+</tr>
+<tr class="regularcharttext" vAlign="top">
+<td><a name="108CustomFunctionAnchor_"/>RF_V_SQL_default_group_for_user_list</td><td></td><td>すべてのアカウント</td><td><strong>// グループテーブルからデフォルト分を抽出する
+</strong><strong>Let</strong> ( 
+[
+  <strong>// SQL文を編集　default が on を抽出する
+</strong>  _sql = "SELECT \"主キー\" FROM \"group\" WHERE \"default_group\" = ?";
+
+  _param = "on" ;
+
+  _group_list = <strong>ExecuteSQL</strong> ( _sql ; "" ; "" ; _param ) 
+
+];
+
+ _group_list
+
+)</td><td>
+<ul></ul>
+</td><td>
+<ul>
+<li><a href="#48ScriptAnchor_">アカウント作成・ユーザ</a></li>
+</ul>
+</td>
+</tr>
+<tr class="regularcharttext" vAlign="top">
+<td><a name="109CustomFunctionAnchor_"/>RF_V_SQL_service_list_by_user_account</td><td>_account_key</td><td>すべてのアカウント</td><td><strong>// アカウントテーブルから指定したアカウントの管理グループを抽出する
+</strong><strong>Let</strong> (
+  [
+    _group_keys =
+      "'" &amp; <strong>Substitute</strong> (
+      <strong>ExecuteSQL</strong> (
+        "SELECT \"_c_group_for_pkey_list_user\"
+        FROM myaccount
+        WHERE \"主キー\" =?" ;
+        "" ; "','" ;
+        _account_key
+      )  ; "&para;" ;"','" ) &amp; 
+      "'" ; <strong>// 主キーがテキストの場合 'key1','key2' のようにシングルクオート+コンマ区切りで結果を返し IN 句で利用
+</strong> 
+      _service_keys =
+        <strong>ExecuteSQL</strong>(
+          "SELECT \"external_key_of_service\" 
+          FROM service_group
+          WHERE \"external_key_of_group\" IN (" &amp; _group_keys &amp; ")" ;
+          "" ; ""
+        );
+
+      _unique_service_keys = <strong>UniqueValues</strong> ( _service_keys ) 
+
+  ] ;
+  _unique_service_keys
+  <strong>// _group_keys
+</strong>)</td><td>
+<ul></ul>
+</td><td>
+<ul>
+<li><a href="#198ScriptAnchor_">アカウントが使えるグループのサービスキーリストをセット</a></li>
+<li><a href="#217ScriptAnchor_">テスト用・グループテーブルが更新された時の処理</a></li>
+</ul>
+</td>
+</tr>
+<tr class="regularcharttext" vAlign="top">
+<td><a name="110CustomFunctionAnchor_"/>RF_V_SQL_service_list_by_manager_account</td><td>_account_key</td><td>すべてのアカウント</td><td><strong>// アカウントテーブルから指定したアカウントの管理グループを抽出する
+</strong><strong>Let</strong> (
+  [
+    _group_keys =
+      "'" &amp; <strong>Substitute</strong> (
+      <strong>ExecuteSQL</strong> (
+        "SELECT \"_c_group_for_pkey_list_manager\"
+        FROM myaccount
+        WHERE \"主キー\" =?" ;
+        "" ; "','" ;
+        _account_key
+      )  ; "&para;" ;"','" ) &amp; 
+      "'" ; <strong>// 主キーがテキストの場合 'key1','key2' のようにシングルクオート+コンマ区切りで結果を返し IN 句で利用
+</strong> 
+      _service_keys =
+        <strong>ExecuteSQL</strong>(
+          "SELECT \"external_key_of_service\" 
+          FROM service_group
+          WHERE \"external_key_of_group\" IN (" &amp; _group_keys &amp; ")" ;
+          "" ; ""
+        );
+
+      _unique_service_keys = <strong>UniqueValues</strong> ( _service_keys ) 
+
+  ] ;
+  _unique_service_keys
+  <strong>// _group_keys
+</strong>)</td><td>
+<ul></ul>
+</td><td>
+<ul>
+<li><a href="#198ScriptAnchor_">アカウントが使えるグループのサービスキーリストをセット</a></li>
 </ul>
 </td>
 </tr>
