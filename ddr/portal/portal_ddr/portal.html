@@ -151,7 +151,7 @@
 </tr>
 <tr class="regularcharttext" vAlign="top">
 <td><a href="#130BaseTableAnchor_">myaccount</a></td><td>
-<div align="left"><a href="#130BaseTableAnchor_">68 フィールド</a> 定義済, 11 レコード</div>
+<div align="left"><a href="#130BaseTableAnchor_">67 フィールド</a> 定義済, 11 レコード</div>
 </td><td><a href="#1065091TableAnchor_"><em>myaccount</em></a>, <a href="#1065154TableAnchor_"><em>myaccount_group&raquo;myaccount_pkey</em></a>, <a href="#1065133TableAnchor_"><em>group&raquo;myaccount_all</em></a>, <a href="#1065132TableAnchor_"><em>group&raquo;myaccount</em></a>, <a href="#1065104TableAnchor_"><em>log≫myaccount_updater</em></a>, <a href="#1065126TableAnchor_"><em>log≫myaccount_creater</em></a>, <a href="#1065098TableAnchor_"><em>myaccount≫myaccount</em></a>, <a href="#1065103TableAnchor_"><em>myaccount≫myaccount_all</em></a>, <a href="#1065107TableAnchor_"><em>myaccount≫myaccount_all_check</em></a></td>
 </tr>
 <tr class="regularcharttext" vAlign="top">
@@ -186,7 +186,7 @@
 </tr>
 <tr class="regularcharttext" vAlign="top">
 <td><a href="#142BaseTableAnchor_">audit</a></td><td>
-<div align="left"><a href="#142BaseTableAnchor_">13 フィールド</a> 定義済, 815 レコード</div>
+<div align="left"><a href="#142BaseTableAnchor_">13 フィールド</a> 定義済, 817 レコード</div>
 </td><td><a href="#1065160TableAnchor_"><em>audit&raquo;audit_self</em></a>, <a href="#1065157TableAnchor_"><em>audit</em></a></td>
 </tr>
 <tr class="regularcharttext" vAlign="top">
@@ -4235,7 +4235,7 @@
 		<table width="100%" border="1">
 <tbody>
 <tr class="privsetfirst" vAlign="top">
-<td colSpan="9">テーブル名: <a name="130BaseTableAnchor_"/>myaccount - 68 フィールド</td>
+<td colSpan="9">テーブル名: <a name="130BaseTableAnchor_"/>myaccount - 67 フィールド</td>
 </tr>
 <tr class="chartheaders" vAlign="top">
 <td width="8%">フィールド名</td><td width="7%">タイプ</td><td width="14%">オプション</td><td width="10%">コメント</td><td width="13%">レイアウト上</td><td width="15%">リレーションシップ内</td><td width="22%">スクリプト内</td><td width="11%">値一覧内</td>
@@ -4682,10 +4682,6 @@
 <ul>
 <li>コンテキストテーブル: <a href="#1065091TableAnchor_"><em>myaccount</em></a></li>
 <li><a href="#13014FieldAnchor_"><em>myaccount</em>::_g_filter_of_service_group</a> &amp; <a href="#13013FieldAnchor_"><em>myaccount</em>::_g_filter_of_service_for_service_portal</a></li>
-</ul>
-<strong>入力値の自動化:</strong>
-<ul>
-<li>常に評価する</li>
 </ul>
 <strong>データの格納:</strong>
 <ul>
@@ -5906,45 +5902,13 @@
 <li>索引設定言語: 日本語</li>
 </ul>
 </td><td></td><td>
-<ul>
-<li><a href="#1LayoutAnchor_">ポータル</a></li>
-<li><a href="#9LayoutAnchor_">アカウント・ユーザ</a></li>
-<li><a href="#3LayoutAnchor_">myaccount</a></li>
-</ul>
+<ul></ul>
 </td><td>
 <ul></ul>
 </td><td>
 <ul></ul>
 </td><td>
 <ul></ul>
-</td>
-</tr>
-			<tr class="regularcharttext" vAlign="top">
-<td><a name="13068FieldAnchor_"/>_c_group_for_manager_list</td><td>計算結果, テキスト</td><td><strong>計算:</strong>
-<ul>
-<li>コンテキストテーブル: <a href="#1065091TableAnchor_"><em>myaccount</em></a></li>
-<li><a href="#13082FieldAnchor_"><em>myaccount</em>::_c_group_for_name_list_manager</a></li>
-</ul>
-<strong>データの格納:</strong>
-<ul>
-<li>繰り返し: 1</li>
-<li>計算結果を保存しない</li>
-<li>索引設定言語: 日本語</li>
-</ul>
-</td><td></td><td>
-<ul>
-<li><a href="#1LayoutAnchor_">ポータル</a></li>
-<li><a href="#9LayoutAnchor_">アカウント・ユーザ</a></li>
-<li><a href="#3LayoutAnchor_">myaccount</a></li>
-</ul>
-</td><td>
-<ul></ul>
-</td><td>
-<ul></ul>
-</td><td>
-<ul>
-<li><a href="#15VLAnchor_">group_name_of_my_manage</a></li>
-</ul>
 </td>
 </tr>
 			<tr class="regularcharttext" vAlign="top">
@@ -6100,11 +6064,7 @@
 <ul>
 <li>コンテキストテーブル: <a href="#1065091TableAnchor_"><em>myaccount</em></a></li>
 <li>
-<strong>If</strong> ( <strong>PatternCount</strong> ( <a href="#13060FieldAnchor_"><em>myaccount</em>::_c_group_for_pkey_list_manager</a> ; <a href="#13079FieldAnchor_"><em>myaccount</em>::_g_external_group_key</a> ) &gt; 0 ; <a href="#22CustomFunctionAnchor_">RF_C_on</a> ; "" )</li>
-</ul>
-<strong>入力値の自動化:</strong>
-<ul>
-<li>常に評価する</li>
+<strong>If</strong> ( <strong>Position</strong> ( <a href="#13060FieldAnchor_"><em>myaccount</em>::_c_group_for_pkey_list_manager</a> ; <a href="#13079FieldAnchor_"><em>myaccount</em>::_g_external_group_key</a> ; 1 ; 1 ) &gt; 0 ; <a href="#22CustomFunctionAnchor_">RF_C_on</a> ; "" )</li>
 </ul>
 <strong>データの格納:</strong>
 <ul>
@@ -6158,7 +6118,7 @@
 <ul>
 <li>コンテキストテーブル: <a href="#1065091TableAnchor_"><em>myaccount</em></a></li>
 <li>
-<strong>If</strong> ( <strong>PatternCount</strong> ( <a href="#13012FieldAnchor_"><em>myaccount</em>::_c_group_for_pkey_list_user</a> ; <a href="#13079FieldAnchor_"><em>myaccount</em>::_g_external_group_key</a> ) &gt; 0 ; <a href="#22CustomFunctionAnchor_">RF_C_on</a> ; "" )</li>
+<strong>If</strong> ( <strong>Position</strong> ( <a href="#13012FieldAnchor_"><em>myaccount</em>::_c_group_for_pkey_list_user</a> ; <a href="#13079FieldAnchor_"><em>myaccount</em>::_g_external_group_key</a> ; 1 ; 1 ) &gt; 0 ; <a href="#22CustomFunctionAnchor_">RF_C_on</a> ; "" )</li>
 </ul>
 <strong>入力値の自動化:</strong>
 <ul>
@@ -6235,13 +6195,19 @@
 <li>索引設定言語: 日本語</li>
 </ul>
 </td><td>管理者として属するグループの主キーリスト</td><td>
-<ul></ul>
+<ul>
+<li><a href="#1LayoutAnchor_">ポータル</a></li>
+<li><a href="#9LayoutAnchor_">アカウント・ユーザ</a></li>
+<li><a href="#3LayoutAnchor_">myaccount</a></li>
+</ul>
 </td><td>
 <ul></ul>
 </td><td>
 <ul></ul>
 </td><td>
-<ul></ul>
+<ul>
+<li><a href="#15VLAnchor_">group_name_of_my_manage</a></li>
+</ul>
 </td>
 </tr>
 			<tr class="regularcharttext" vAlign="top">
@@ -6262,7 +6228,11 @@
 <li>索引設定言語: 日本語</li>
 </ul>
 </td><td>利用者として属するグループの主キーリスト</td><td>
-<ul></ul>
+<ul>
+<li><a href="#1LayoutAnchor_">ポータル</a></li>
+<li><a href="#9LayoutAnchor_">アカウント・ユーザ</a></li>
+<li><a href="#3LayoutAnchor_">myaccount</a></li>
+</ul>
 </td><td>
 <ul></ul>
 </td><td>
@@ -10575,7 +10545,6 @@
 <li><a href="#13015FieldAnchor_"><em>myaccount</em>::_c_group_for_user_csv</a></li>
 <li><a href="#13016FieldAnchor_"><em>myaccount</em>::_c_filter_of_service</a></li>
 <li><a href="#13067FieldAnchor_"><em>myaccount</em>::_c_group_for_user_list</a></li>
-<li><a href="#13068FieldAnchor_"><em>myaccount</em>::_c_group_for_manager_list</a></li>
 <li><a href="#13069FieldAnchor_"><em>myaccount</em>::_c_group_for_manager_csv</a></li>
 <li><a href="#13078FieldAnchor_"><em>myaccount</em>::_c_flg_for_myaccount_group_manager_exist</a></li>
 <li><a href="#13080FieldAnchor_"><em>myaccount</em>::_c_flg_for_myaccount_group_user_exist</a></li>
@@ -14702,7 +14671,7 @@
 <table width="100%" border="1">
 <tbody>
 <tr class="chartheaders" valign="top">
-<td colspan="6" class="privsetfirst">フィールド名: <a href="#13068FieldAnchor_"><em>myaccount≫myaccount_all</em>::_c_group_for_manager_list</a></td>
+<td colspan="6" class="privsetfirst">フィールド名: <a href="#13082FieldAnchor_"><em>myaccount≫myaccount_all</em>::_c_group_for_name_list_manager</a></td>
 </tr>
 <tr class="chartsubheads" valign="top">
 <td class="chartheaders" colspan="2">フィールドプロパティ</td><td class="chartheaders" width="14%" colspan="1">座標</td><td class="chartheaders" width="17%" colspan="1">フィールド書式</td><td class="chartheaders" width="30%" colspan="1">フィールド選択時の動作</td><td class="chartheaders" width="10%" colspan="1">クイック検索</td>
@@ -14739,7 +14708,7 @@
 <table width="100%" border="1">
 <tbody>
 <tr class="chartheaders" valign="top">
-<td colspan="6" class="privsetfirst">フィールド名: <a href="#13067FieldAnchor_"><em>myaccount≫myaccount_all</em>::_c_group_for_user_list</a></td>
+<td colspan="6" class="privsetfirst">フィールド名: <a href="#13083FieldAnchor_"><em>myaccount≫myaccount_all</em>::_c_group_for_name_list_user</a></td>
 </tr>
 <tr class="chartsubheads" valign="top">
 <td class="chartheaders" colspan="2">フィールドプロパティ</td><td class="chartheaders" width="14%" colspan="1">座標</td><td class="chartheaders" width="17%" colspan="1">フィールド書式</td><td class="chartheaders" width="30%" colspan="1">フィールド選択時の動作</td><td class="chartheaders" width="10%" colspan="1">クイック検索</td>
@@ -16890,7 +16859,7 @@
 </ul>
 <ul>
 <b>ラベルの計算式:</b>
-<li><a href="#36CustomFunctionAnchor_">RF_V_str_value_list_matching</a> ( <a href="#13241FieldAnchor_"><em>myaccount≫service_all</em>::_c_group_list</a> ; <a href="#13067FieldAnchor_"><em>myaccount</em>::_c_group_for_user_list</a> )</li>
+<li><a href="#36CustomFunctionAnchor_">RF_V_str_value_list_matching</a> ( <a href="#13241FieldAnchor_"><em>myaccount≫service_all</em>::_c_group_list</a> ; <a href="#13083FieldAnchor_"><em>myaccount</em>::_c_group_for_name_list_user</a> )</li>
 </ul>
 </td><td colspan="5">
 <ul>
@@ -20420,7 +20389,7 @@
 <ul>
 <b>ラベルの計算式:</b>
 <li>
-<strong>Let</strong> ( [ A = <strong>ValueCount</strong> ( <a href="#13060FieldAnchor_"><em>myaccount≫myaccount_all</em>::_c_group_for_pkey_list_manager</a> )] ; &#13;&#13;  <strong>Case</strong> ( &#13;&#13;    A = 0 ; "" ; &#13;&#13;    A  &ge;  1 <strong>and</strong> A  &le; 2 ; <a href="#13068FieldAnchor_"><em>myaccount≫myaccount_all</em>::_c_group_for_manager_list</a> ; &#13;&#13;    A  &ge; 3 ; <strong>GetValue</strong> ( <a href="#13068FieldAnchor_"><em>myaccount≫myaccount_all</em>::_c_group_for_manager_list</a> ; 1 )  &amp; &para; &amp; <strong>GetValue</strong> ( <a href="#13068FieldAnchor_"><em>myaccount≫myaccount_all</em>::_c_group_for_manager_list</a> ; 2 ) &amp; "..." ;  &#13;&#13;    A )&#13;&#13;)</li>
+<strong>Let</strong> ( [ A = <strong>ValueCount</strong> ( <a href="#13060FieldAnchor_"><em>myaccount≫myaccount_all</em>::_c_group_for_pkey_list_manager</a> )] ; &#13;&#13;  <strong>Case</strong> ( &#13;&#13;    A = 0 ; "" ; &#13;&#13;    A  &ge;  1 <strong>and</strong> A  &le; 2 ; <a href="#13082FieldAnchor_"><em>myaccount≫myaccount_all</em>::_c_group_for_name_list_manager</a> ; &#13;&#13;    A  &ge; 3 ; <strong>GetValue</strong> ( <a href="#13082FieldAnchor_"><em>myaccount≫myaccount_all</em>::_c_group_for_name_list_manager</a> ; 1 )  &amp; &para; &amp; <strong>GetValue</strong> ( <a href="#13082FieldAnchor_"><em>myaccount≫myaccount_all</em>::_c_group_for_name_list_manager</a> ; 2 ) &amp; "..." ;  &#13;&#13;    A )&#13;&#13;)</li>
 </ul>
 </td><td colspan="5">
 <ul>
@@ -20475,7 +20444,7 @@
 </td><td>
 <ul></ul>
 </td><td>フィールドオブジェクト<ul>
-<li><a href="#13068FieldAnchor_"><em>myaccount≫myaccount_all</em>::_c_group_for_manager_list</a> 座標 (155, 318, 305, 666)</li>
+<li><a href="#13082FieldAnchor_"><em>myaccount≫myaccount_all</em>::_c_group_for_name_list_manager</a> 座標 (155, 318, 305, 666)</li>
 </ul>
 </td><td></td><td></td><td></td><td></td>
 </tr>
@@ -20498,7 +20467,7 @@
 <ul>
 <b>ラベルの計算式:</b>
 <li>
-<strong>Let</strong> ( [ A = <strong>ValueCount</strong> ( <a href="#13012FieldAnchor_"><em>myaccount≫myaccount_all</em>::_c_group_for_pkey_list_user</a> )] ; &#13;&#13;  <strong>Case</strong> ( &#13;&#13;    A = 0 ; "" ; &#13;&#13;    A  &ge;  1 <strong>and</strong> A  &le; 2 ; <a href="#13067FieldAnchor_"><em>myaccount≫myaccount_all</em>::_c_group_for_user_list</a> ; &#13;&#13;    A  &ge; 3 ; <strong>GetValue</strong> ( <a href="#13067FieldAnchor_"><em>myaccount≫myaccount_all</em>::_c_group_for_user_list</a> ; 1 )  &amp; &para; &amp; <strong>GetValue</strong> ( <a href="#13067FieldAnchor_"><em>myaccount≫myaccount_all</em>::_c_group_for_user_list</a> ; 2 ) &amp; "..." ;  &#13;&#13;    A )&#13;&#13;)</li>
+<strong>Let</strong> ( [ A = <strong>ValueCount</strong> ( <a href="#13012FieldAnchor_"><em>myaccount≫myaccount_all</em>::_c_group_for_pkey_list_user</a> )] ; &#13;&#13;  <strong>Case</strong> ( &#13;&#13;    A = 0 ; "" ; &#13;&#13;    A  &ge;  1 <strong>and</strong> A  &le; 2 ; <a href="#13083FieldAnchor_"><em>myaccount≫myaccount_all</em>::_c_group_for_name_list_user</a> ; &#13;&#13;    A  &ge; 3 ; <strong>GetValue</strong> ( <a href="#13083FieldAnchor_"><em>myaccount≫myaccount_all</em>::_c_group_for_name_list_user</a> ; 1 )  &amp; &para; &amp; <strong>GetValue</strong> ( <a href="#13083FieldAnchor_"><em>myaccount≫myaccount_all</em>::_c_group_for_name_list_user</a> ; 2 ) &amp; "..." ;  &#13;&#13;    A )&#13;&#13;)</li>
 </ul>
 </td><td colspan="5">
 <ul>
@@ -20553,7 +20522,7 @@
 </td><td>
 <ul></ul>
 </td><td>フィールドオブジェクト<ul>
-<li><a href="#13067FieldAnchor_"><em>myaccount≫myaccount_all</em>::_c_group_for_user_list</a> 座標 (155, 450, 305, 798)</li>
+<li><a href="#13083FieldAnchor_"><em>myaccount≫myaccount_all</em>::_c_group_for_name_list_user</a> 座標 (155, 450, 305, 798)</li>
 </ul>
 </td><td></td><td></td><td></td><td></td>
 </tr>
@@ -21890,8 +21859,8 @@
 </ul>
 </td><td colspan="1">フィールドオブジェクト<ul>
 <li><a href="#13024FieldAnchor_"><em>myaccount≫myaccount_all</em>::account_image</a> 座標 (211, 279, 249, 317)</li>
-<li><a href="#13068FieldAnchor_"><em>myaccount≫myaccount_all</em>::_c_group_for_manager_list</a> 座標 (155, 318, 305, 666)</li>
-<li><a href="#13067FieldAnchor_"><em>myaccount≫myaccount_all</em>::_c_group_for_user_list</a> 座標 (155, 450, 305, 798)</li>
+<li><a href="#13082FieldAnchor_"><em>myaccount≫myaccount_all</em>::_c_group_for_name_list_manager</a> 座標 (155, 318, 305, 666)</li>
+<li><a href="#13083FieldAnchor_"><em>myaccount≫myaccount_all</em>::_c_group_for_name_list_user</a> 座標 (155, 450, 305, 798)</li>
 <li><a href="#13032FieldAnchor_"><em>myaccount≫myaccount_all</em>::check</a> 座標 (216, 252, 245, 276)</li>
 </ul>
 </td><td colspan="2">
@@ -22238,8 +22207,8 @@
 <li><a href="#13023FieldAnchor_"><em>myaccount</em>::_g_filter_of_account_group</a> 座標 (95, 635, 129, 888)</li>
 <li><a href="#13022FieldAnchor_"><em>myaccount</em>::_g_filter_of_account_name</a> 座標 (94, 327, 131, 590)</li>
 <li><a href="#13024FieldAnchor_"><em>myaccount≫myaccount_all</em>::account_image</a> 座標 (211, 279, 249, 317)</li>
-<li><a href="#13068FieldAnchor_"><em>myaccount≫myaccount_all</em>::_c_group_for_manager_list</a> 座標 (155, 318, 305, 666)</li>
-<li><a href="#13067FieldAnchor_"><em>myaccount≫myaccount_all</em>::_c_group_for_user_list</a> 座標 (155, 450, 305, 798)</li>
+<li><a href="#13082FieldAnchor_"><em>myaccount≫myaccount_all</em>::_c_group_for_name_list_manager</a> 座標 (155, 318, 305, 666)</li>
+<li><a href="#13083FieldAnchor_"><em>myaccount≫myaccount_all</em>::_c_group_for_name_list_user</a> 座標 (155, 450, 305, 798)</li>
 <li><a href="#13032FieldAnchor_"><em>myaccount≫myaccount_all</em>::check</a> 座標 (216, 252, 245, 276)</li>
 <li><a href="#13033FieldAnchor_"><em>myaccount</em>::g_check_account_contrl</a> 座標 (157, 252, 186, 276)</li>
 <li><a href="#13081FieldAnchor_"><em>myaccount</em>::_c_group_for_user_csv_for_footer</a> 座標 (628, 247, 654, 1009)</li>
@@ -28465,7 +28434,7 @@
 <table width="100%" border="1">
 <tbody>
 <tr class="chartheaders" valign="top">
-<td colspan="6" class="privsetfirst">フィールド名: <a href="#13068FieldAnchor_"><em>myaccount</em>::_c_group_for_manager_list</a></td>
+<td colspan="6" class="privsetfirst">フィールド名: <a href="#13082FieldAnchor_"><em>myaccount</em>::_c_group_for_name_list_manager</a></td>
 </tr>
 <tr class="chartsubheads" valign="top">
 <td class="chartheaders" colspan="2">フィールドプロパティ</td><td class="chartheaders" width="14%" colspan="1">座標</td><td class="chartheaders" width="17%" colspan="1">フィールド書式</td><td class="chartheaders" width="30%" colspan="1">フィールド選択時の動作</td><td class="chartheaders" width="10%" colspan="1">クイック検索</td>
@@ -28502,7 +28471,7 @@
 <table width="100%" border="1">
 <tbody>
 <tr class="chartheaders" valign="top">
-<td colspan="6" class="privsetfirst">フィールド名: <a href="#13067FieldAnchor_"><em>myaccount</em>::_c_group_for_user_list</a></td>
+<td colspan="6" class="privsetfirst">フィールド名: <a href="#13083FieldAnchor_"><em>myaccount</em>::_c_group_for_name_list_user</a></td>
 </tr>
 <tr class="chartsubheads" valign="top">
 <td class="chartheaders" colspan="2">フィールドプロパティ</td><td class="chartheaders" width="14%" colspan="1">座標</td><td class="chartheaders" width="17%" colspan="1">フィールド書式</td><td class="chartheaders" width="30%" colspan="1">フィールド選択時の動作</td><td class="chartheaders" width="10%" colspan="1">クイック検索</td>
@@ -29535,7 +29504,7 @@
 </td><td>
 <ul></ul>
 </td><td>フィールドオブジェクト<ul>
-<li><a href="#13068FieldAnchor_"><em>myaccount</em>::_c_group_for_manager_list</a> 座標 (488, 26, 556, 407)</li>
+<li><a href="#13082FieldAnchor_"><em>myaccount</em>::_c_group_for_name_list_manager</a> 座標 (488, 26, 556, 407)</li>
 </ul>
 </td><td>
 <li><a href="#PopoverButton452.0000000407.0000000496.0000000453.0000000LayoutObjectAnchor_">テキスト: </a> 座標 (452, 407, 496, 453)</li>
@@ -29554,7 +29523,7 @@
 </td><td>
 <ul></ul>
 </td><td>フィールドオブジェクト<ul>
-<li><a href="#13067FieldAnchor_"><em>myaccount</em>::_c_group_for_user_list</a> 座標 (488, 26, 556, 407)</li>
+<li><a href="#13083FieldAnchor_"><em>myaccount</em>::_c_group_for_name_list_user</a> 座標 (488, 26, 556, 407)</li>
 </ul>
 </td><td>
 <li><a href="#PopoverButton452.0000000407.0000000496.0000000453.0000000LayoutObjectAnchor_">テキスト: </a> 座標 (452, 407, 496, 453)</li>
@@ -35549,7 +35518,7 @@
 <table width="100%" border="1">
 <tbody>
 <tr class="chartheaders" valign="top">
-<td colspan="6" class="privsetfirst">フィールド名: <a href="#13068FieldAnchor_"><em>myaccount</em>::_c_group_for_manager_list</a></td>
+<td colspan="6" class="privsetfirst">フィールド名: <a href="#13082FieldAnchor_"><em>myaccount</em>::_c_group_for_name_list_manager</a></td>
 </tr>
 <tr class="chartsubheads" valign="top">
 <td class="chartheaders" colspan="2">フィールドプロパティ</td><td class="chartheaders" width="14%" colspan="1">座標</td><td class="chartheaders" width="17%" colspan="1">フィールド書式</td><td class="chartheaders" width="30%" colspan="1">フィールド選択時の動作</td><td class="chartheaders" width="10%" colspan="1">クイック検索</td>
@@ -35585,7 +35554,7 @@
 <table width="100%" border="1">
 <tbody>
 <tr class="chartheaders" valign="top">
-<td colspan="6" class="privsetfirst">フィールド名: <a href="#13067FieldAnchor_"><em>myaccount</em>::_c_group_for_user_list</a></td>
+<td colspan="6" class="privsetfirst">フィールド名: <a href="#13083FieldAnchor_"><em>myaccount</em>::_c_group_for_name_list_user</a></td>
 </tr>
 <tr class="chartsubheads" valign="top">
 <td class="chartheaders" colspan="2">フィールドプロパティ</td><td class="chartheaders" width="14%" colspan="1">座標</td><td class="chartheaders" width="17%" colspan="1">フィールド書式</td><td class="chartheaders" width="30%" colspan="1">フィールド選択時の動作</td><td class="chartheaders" width="10%" colspan="1">クイック検索</td>
@@ -41078,7 +41047,7 @@
 </tr>
 <tr class="regularcharttext">
 <td><a name="15VLAnchor_"/>group_name_of_my_manage</td><td>フィールド</td><td>
-<ul>メインフィールド<li>フィールド: <a href="#13068FieldAnchor_"><em>myaccount</em>::_c_group_for_manager_list</a></li>
+<ul>メインフィールド<li>フィールド: <a href="#13082FieldAnchor_"><em>myaccount</em>::_c_group_for_name_list_manager</a></li>
 <br>
 <li>最初のフィールドでソート</li>
 <li>テーブルオカレンス: <a href="#1065098TableAnchor_"><em>myaccount≫myaccount</em></a></li>
@@ -61581,7 +61550,7 @@ _control = "help";
 
   _account = <strong>Get</strong> ( <strong>アカウント名</strong> ) ;
 
- _sql = "SELECT \"_c_group_for_manager_list\" FROM \"myaccount\"  WHERE \"account_name\" = ?";
+ _sql = "SELECT \"_c_group_for_name_list_manager\" FROM \"myaccount\"  WHERE \"account_name\" = ?";
 
  _result = <strong>ExecuteSQL</strong> ( _sql ; "" ; "" ; _account )
 
